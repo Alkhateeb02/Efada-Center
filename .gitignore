@@ -10,5 +10,10 @@ ehthumbs.db
 *.swp
 *.swo
 
-# Local scratch / logs
+# Local scratch / logs / temp docs
 *.log
+~$*
+<<<<<<< HEAD
+*.docx
+=======
+>>>>>>> ceecf2e (Apply official Efada Center adjustments: update branding, add About Us, sports conditioning, dual branches, official contact and social links)

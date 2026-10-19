@@ -1339,6 +1339,396 @@ a[href^="tel:"] strong {
 }
 
 /* ==========================================================================
+   About Us Section & Founder Spotlight
+   ========================================================================== */
+
+.about-section {
+  background-color: var(--bg-surface);
+  position: relative;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.about-lead {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-main);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.about-text-content p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.about-vision-card {
+  display: flex;
+  gap: 18px;
+  padding: 24px;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-lg);
+  border-right: 4px solid var(--brand-yellow);
+  margin: 28px 0;
+}
+
+[dir="ltr"] .about-vision-card {
+  border-right: none;
+  border-left: 4px solid var(--brand-yellow);
+}
+
+.vision-icon {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+}
+
+.about-vision-card h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: var(--text-main);
+}
+
+.about-vision-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.about-goals-card {
+  background: var(--bg-subtle);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  margin-top: 24px;
+}
+
+.about-goals-card h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--text-main);
+}
+
+.founder-spotlight-card {
+  background: linear-gradient(145deg, rgba(47, 140, 92, 0.08) 0%, rgba(37, 111, 73, 0.03) 100%);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 36px 30px;
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.founder-badge-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.founder-avatar-wrap {
+  width: 66px;
+  height: 66px;
+  background-color: var(--brand-green-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  border: 2px solid var(--brand-green);
+  flex-shrink: 0;
+}
+
+.founder-label {
+  display: inline-block;
+  font-size: 0.775rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--brand-green);
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.founder-badge-header h4 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0;
+  line-height: 1.35;
+}
+
+.founder-bio {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 22px;
+}
+
+.founder-meta-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  padding: 16px 0;
+  border-top: 1px dashed var(--border-color);
+  border-bottom: 1px dashed var(--border-color);
+  margin-bottom: 22px;
+}
+
+.founder-meta-strip .meta-item small {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.founder-meta-strip .meta-item strong {
+  font-size: 0.95rem;
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.founder-email-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.founder-email-link {
+  color: var(--brand-green);
+  word-break: break-all;
+}
+
+/* ==========================================================================
+   Clean Contact Hub & Social Media Grid
+   ========================================================================== */
+
+.contact-clean-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.social-hub-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 36px 30px;
+  box-shadow: var(--shadow-md);
+}
+
+.social-hub-card h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.social-hub-card p {
+  font-size: 0.925rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.social-links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-subtle);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  transition: var(--transition-smooth);
+}
+
+.social-btn .soc-icon {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.social-btn.snapchat:hover {
+  background: #FFFC00;
+  color: #000000;
+  border-color: #e2df00;
+}
+
+.social-btn.instagram:hover {
+  background: #E1306C;
+  color: #ffffff;
+  border-color: #c13584;
+}
+
+.social-btn.tiktok:hover {
+  background: #000000;
+  color: #ffffff;
+  border-color: #25F4EE;
+}
+
+.social-btn.x-twitter:hover {
+  background: #000000;
+  color: #ffffff;
+  border-color: #333333;
+}
+
+.social-btn.whatsapp:hover {
+  background: #25D366;
+  color: #ffffff;
+  border-color: #25D366;
+}
+
+/* ==========================================================================
+   Dual Campus Branches (Males & Females)
+   ========================================================================== */
+
+.dual-location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 36px;
+}
+
+.loc-branch-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+}
+
+.loc-branch-card:hover {
+  border-color: var(--brand-green);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.branch-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.branch-badge.males {
+  background: var(--brand-blue-light);
+  color: var(--brand-blue);
+}
+
+.branch-badge.females {
+  background: var(--brand-red-light);
+  color: var(--brand-red);
+}
+
+.loc-branch-card h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--text-main);
+}
+
+.loc-branch-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.loc-branch-feats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.loc-feat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.875rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.owner-footer-highlight {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.owner-footer-highlight strong {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.owner-footer-highlight a {
+  color: #7ee2b0;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.footer-social-link {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.footer-social-link:hover {
+  background: var(--brand-green);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
    Responsive Adaptations
    ========================================================================== */
 
@@ -1347,6 +1737,13 @@ a[href^="tel:"] strong {
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
+  }
+
+  .about-grid,
+  .contact-clean-layout,
+  .dual-location-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
   }
 
   .hero-desc {
@@ -1361,14 +1758,8 @@ a[href^="tel:"] strong {
     justify-content: center;
   }
 
-  .contact-grid,
-  .location-split {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
   .main-nav {
-    display: none; /* Can be expanded or kept streamlined */
+    display: none;
   }
 
   .footer-layout {
@@ -1378,6 +1769,10 @@ a[href^="tel:"] strong {
 
   .footer-copy-col {
     text-align: center !important;
+  }
+
+  .footer-socials {
+    justify-content: center;
   }
 }
 
@@ -1392,7 +1787,8 @@ a[href^="tel:"] strong {
     font-size: 0.75rem;
   }
 
-  .form-row-2 {
+  .social-links-grid,
+  .founder-meta-strip {
     grid-template-columns: 1fr;
   }
 
@@ -1410,3 +1806,4 @@ a[href^="tel:"] strong {
     display: none;
   }
 }
+
