@@ -157,10 +157,14 @@ const translations = {
     locFemalesFeat1: "Early Intervention & Academic Readiness Suites",
     locFemalesFeat2: "Life Skills & Social Independence Halls",
 
+    viewLocationMap: "View Location on Google Maps",
+
     // Footer
     footerMission: "A licensed sanctuary of developmental growth, speech, compassion, and autonomy under Ministry of Social Affairs License No. 204.",
     footerAccred: "Accredited under License No. 204 • Supervised by Ministry of Social Affairs (Human Resources & Social Development).",
-    footerOwnerTitle: "Founder & General Director: Special Education Specialist Dema Abdullah Al-Tawil"
+    footerOwnerTitle: "Founder & General Director: Special Education Specialist Dema Abdullah Al-Tawil",
+    footerEmailLabel: "Management Email: ",
+    footerCopy: "Efada Day Care Center. All Rights Reserved."
   },
   ar: {
     skip: "الانتقال للمحتوى الرئيسي",
@@ -314,10 +318,14 @@ const translations = {
     locFemalesFeat1: "أجنحة تدخل مبكر وتهيئة مدرسية للبنات",
     locFemalesFeat2: "قاعات تدريب مهني ومهارات حياتية",
 
+    viewLocationMap: "عرض الموقع على خرائط جوجل",
+
     // Footer
     footerMission: "صرح متخصص يرعى النمو، النطق، والدمج الرياضي والأكاديمي للأطفال وأسرهم بترخيص رقم 204 من وزارة الشؤون الاجتماعية.",
     footerAccred: "مرخص ومعتمد برقم (204) بإشراف وزارة الشؤون الاجتماعية (الموارد البشرية والتنمية الاجتماعية).",
-    footerOwnerTitle: "المؤسسة والمديرة العامة: أخصائية التربية الخاصة ديمة عبدالله الطويل"
+    footerOwnerTitle: "المؤسسة والمديرة العامة: أخصائية التربية الخاصة ديمة عبدالله الطويل",
+    footerEmailLabel: "البريد الإلكتروني للإدارة: ",
+    footerCopy: "مركز إفادة للرعاية النهارية. جميع الحقوق محفوظة."
   }
 };
 

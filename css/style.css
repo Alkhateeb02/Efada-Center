@@ -1684,6 +1684,31 @@ a[href^="tel:"] strong {
   font-weight: 600;
 }
 
+.loc-branch-action {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.loc-map-btn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: var(--transition-smooth);
+}
+
+.loc-map-btn:hover {
+  border-color: var(--brand-green);
+  color: var(--brand-green);
+  transform: translateY(-2px);
+}
+
 .owner-footer-highlight {
   margin-top: 14px;
   padding-top: 14px;
