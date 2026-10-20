@@ -1290,6 +1290,13 @@ a[href^="tel:"] strong {
   border-color: #333333;
 }
 
+.branch-social-pill.tiktok:hover {
+  background: #000000;
+  color: #ffffff;
+  border-color: #25F4EE;
+  box-shadow: 0 4px 12px rgba(37, 244, 238, 0.25);
+}
+
 .branch-map-action {
   margin-top: auto;
   padding-top: 14px;
