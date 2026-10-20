@@ -1196,6 +1196,16 @@ a[href^="tel:"] strong {
   font-weight: 600;
 }
 
+.social-svg {
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
 .branch-wa-icon-btn {
   width: 46px;
   height: 46px;
@@ -1205,7 +1215,6 @@ a[href^="tel:"] strong {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
   flex-shrink: 0;
   transition: var(--transition-smooth);
 }
@@ -1213,6 +1222,12 @@ a[href^="tel:"] strong {
 .branch-wa-icon-btn:hover {
   transform: scale(1.06);
   box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+}
+
+.branch-wa-icon-btn .social-svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: #ffffff;
 }
 
 .branch-socials-box {
@@ -1241,12 +1256,12 @@ a[href^="tel:"] strong {
 .branch-social-pill {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
+  gap: 10px;
+  padding: 9px 18px;
   border-radius: var(--radius-md);
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--text-main);
   transition: var(--transition-smooth);
@@ -1525,22 +1540,46 @@ a[href^="tel:"] strong {
 }
 
 .footer-social-link {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  font-size: 1.05rem;
   transition: var(--transition-smooth);
 }
 
+.footer-social-link .social-svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: #ffffff;
+}
+
 .footer-social-link:hover {
-  background: var(--brand-green);
   transform: translateY(-2px);
-  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.footer-social-link.snapchat:hover {
+  background: #FFFC00;
+}
+.footer-social-link.snapchat:hover .social-svg {
+  fill: #000000;
+}
+
+.footer-social-link.instagram:hover {
+  background: #E1306C;
+}
+
+.footer-social-link.x-twitter:hover {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-social-link.whatsapp:hover {
+  background: #25D366;
 }
 
 /* ==========================================================================
