@@ -618,7 +618,7 @@ a[href^="tel:"] strong {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
-  padding: 38px 32px 26px;
+  padding: 52px 36px 44px;
   text-align: center;
   box-shadow: var(--shadow-lg);
   max-width: 440px;
@@ -628,11 +628,11 @@ a[href^="tel:"] strong {
 .emblem-img-wrap {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .hero-emblem-img {
-  width: 200px;
+  width: 195px;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.08));
@@ -645,7 +645,9 @@ a[href^="tel:"] strong {
 }
 
 .emblem-badge-caption {
-  margin-top: 10px;
+  margin-top: 12px;
+  position: relative;
+  z-index: 2;
 }
 
 .badge-title {
@@ -662,12 +664,19 @@ a[href^="tel:"] strong {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 16px;
+  padding: 12px 18px;
   background: var(--bg-surface-elevated);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: start;
+  max-width: 290px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-brand-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.15);
 }
 
 .floating-brand-badge strong {
@@ -675,6 +684,7 @@ a[href^="tel:"] strong {
   font-size: 0.95rem;
   font-weight: 800;
   color: var(--text-main);
+  white-space: nowrap;
 }
 
 .floating-brand-badge small {
@@ -699,13 +709,13 @@ a[href^="tel:"] strong {
 }
 
 .float-top-right {
-  top: -16px;
-  right: -20px;
+  top: -34px;
+  right: -55px;
 }
 
 .float-bottom-left {
-  bottom: -16px;
-  left: -20px;
+  bottom: -34px;
+  left: -55px;
 }
 
 /* ==========================================================================
@@ -1598,6 +1608,16 @@ a[href^="tel:"] strong {
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
+  }
+
+  .float-top-right {
+    top: -26px;
+    right: -25px;
+  }
+
+  .float-bottom-left {
+    bottom: -26px;
+    left: -25px;
   }
 
   .about-grid,
