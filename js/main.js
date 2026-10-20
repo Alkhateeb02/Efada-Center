@@ -1,189 +1,50 @@
 /**
- * Instance 5: Official Brand Emblem & Color Palette
- * Efada Day Care & Down Syndrome Center (مركز إفادة للرعاية النهارية ومتلازمة داون)
- * Complete bilingual (EN/AR) engine with dark mode & Bidi phone protection
+ * Efada Day Care Center (Down Syndrome) - مركز إفادة للرعاية النهارية (متلازمة داون)
+ * License No. 204 - Ministry of Human Resources and Social Development
+ * Bilingual Engine (AR/EN), Theme Switching, LTR Phone Number Enforcement, and Smooth Scrolling
  */
 
 const translations = {
-  en: {
-    skip: "Skip to main content",
-    topStripText: "Licensed Day Care & Down Syndrome Center • License No. 204 (Ministry of Social Affairs)",
-    admissionsOpen: "Admissions & Diagnostic Intake Open",
-    bookEvalShort: "Book Evaluation ↗",
-    brand: "EFADA CENTER",
-    brandSub: "Day Care & Down Syndrome Center",
-    navAbout: "About Us",
-    navPillars: "Our Pillars",
-    navServices: "Specialized Services",
-    navTeam: "Motor & Sports Activities",
-    navContact: "Contact & Intake",
-    consultationCta: "Book Evaluation",
-    heroPill: "Official Accreditation • License No. 204",
-    heroTitle: "Nurturing Growth.<br><span class=\"hero-gradient-text\">Empowering Champions.</span>",
-    heroDesc: "At Efada Center, our certified specialists create individualized pathways in speech therapy, behavioral development, academic readiness, and competitive physical fitness.",
-    requestConsultation: "Request Diagnostic Evaluation",
-    explorePrograms: "Explore Programs & Services",
-    statGoalMastery: "Individualized Goal Mastery",
-    statDedicatedRatio: "Dedicated Therapy Ratio",
-    statChildrenSupported: "Children Empowered & Integrated",
-    emblemTitle: "Comprehensive Care Shield",
-    emblemSubtitle: "Protection, therapy, communication, and rising potential in perfect harmony.",
-    badgeGreen: "Growth & Safety",
-    badgeGreenSub: "Therapeutic Environment",
-    badgeBlue: "Communication",
-    badgeBlueSub: "Speech & AAC Mastery",
-    
-    // About Us
-    aboutKicker: "About Efada Center",
-    aboutTitle: "Official Day Care & Down Syndrome Center",
-    aboutStory1: "The initiative to establish Efada Day Care Center began with Special Education Specialist <strong>Dema Abdullah Al-Tawil</strong>, with the primary goal of rehabilitating and training children with Down Syndrome and empowering their mothers in proper care and educational techniques.",
-    aboutStory2: "Having worked with specialized groups of children since 2009, obtaining official accreditation remained a guiding mission until it was granted in 2013 under the name <strong>Efada Day Care Center</strong>, supervised by the Ministry of Social Affairs (Human Resources and Social Development) under license <strong>No. 204</strong>.",
-    aboutVisionTitle: "Our Vision",
-    aboutVisionText: "Empowering children with Down Syndrome to reach their highest potential in academic, vocational, and competitive athletic achievements.",
-    aboutGoalsTitle: "Our Mission & Strategic Goals",
-    aboutGoal1: "Providing comprehensive rehabilitation and healthcare services for children with Down Syndrome.",
-    aboutGoal2: "Providing psychological rehabilitation for adolescents and specialized vocational and athletic training.",
-    aboutGoal3: "Developing and delivering training programs, knowledge resources, and support services for families.",
-    aboutGoal4: "Creating and delivering educational and rehabilitation curricula tailored for Down Syndrome.",
-    aboutGoal5: "Developing training and scientific materials to qualify coaches and teachers in Down Syndrome and developmental support.",
-    founderTag: "Founder & General Director",
-    founderName: "Special Education Specialist: Dema Abdullah Al-Tawil",
-    founderBio: "Pioneer in Down Syndrome pediatric rehabilitation, family empowerment, and vocational/athletic integration programs with active practice since 2009.",
-    licenseLabel: "Official License",
-    licenseVal: "License No. 204 (Ministry of Social Affairs)",
-    sinceLabel: "Establishment",
-    sinceVal: "Since 2009 (Licensed 2013)",
-
-    // Pillars
-    pillarsKicker: "Our Foundation",
-    pillarsTitle: "Four Core Pillars of Developmental Care",
-    pillarsSubtitle: "Represented by the colors of our official emblem, each element forms an essential dimension of your child's journey.",
-    pGreenLabel: "Green Pillar • The Roof & Stem",
-    pGreenTitle: "Shelter & Foundational Growth",
-    pGreenDesc: "A safe, structured sanctuary where children feel protected and grounded. Our calibrated environment lays the neurological groundwork for all future learning.",
-    pRedLabel: "Red Pillar • The Compassion Cradle",
-    pRedTitle: "Compassion & Behavioral Support",
-    pRedDesc: "Positive behavioral guidance and support programs based on understanding the child's emotions, building alternative skills, humanely modifying behavior, and fostering family cooperation.",
-    pBlueLabel: "Blue Pillar • The Trust Wing",
-    pBlueTitle: "Communication & Expression",
-    pBlueDesc: "Speech-language therapy, articulation coaching, and augmentative and alternative communication (AAC) giving every child their rightful voice.",
-    pYellowLabel: "Gold Pillar • The Rising Sun",
-    pYellowTitle: "Autonomy & Milestone Triumphs",
-    pYellowDesc: "Life skills, gross motor dexterity, classroom readiness, and athletic integration celebrating the dawn of self-sufficiency and genuine independence.",
-
-    // Services
-    servicesKicker: "Specialized Programs",
-    servicesTitle: "Targeted Interventions Built for Success",
-    servicesSubtitle: "Every child undergoes a detailed diagnostic assessment before receiving their tailored Individualized Educational Plan (IEP).",
-    catSpeech: "Speech & Language Division",
-    srvSpeechTitle: "Speech & Language Therapy",
-    srvSpeechDesc: "Treating developmental language delays, pragmatic disorders, articulation deficits, and assistive communication device (AAC) training.",
-    chkSpeech1: "Phonological & Articulation Therapy",
-    chkSpeech2: "Receptive & Expressive Language Development",
-    chkSpeech3: "High-Tech & Low-Tech AAC Integration",
-    catOT: "Occupational Therapy Division",
-    srvOTTitle: "Occupational Therapy",
-    srvOTDesc: "Enhancing fine motor coordination, pencil grip, sensory modulation, and activities of daily living (ADL) for complete self-reliance.",
-    chkOT1: "Daily Life Autonomy & Self-Care",
-    chkOT2: "Fine Motor Coordination & Pre-Writing",
-    chkOT3: "Sensory & Neuromuscular Modulation",
-    catPT: "Physical Therapy Division",
-    srvPTTitle: "Physical Therapy & Developmental Motor Rehabilitation",
-    srvPTDesc: "Therapeutic and rehabilitation programs designed to enhance gross and fine motor skills, promote balance and muscle stability, and empower the child toward safe and efficient motor independence.",
-    chkPT1: "Comprehensive Motor Assessment & Muscle/Joint Functions",
-    chkPT2: "Muscle Strengthening, Balance Improvement & Neuromuscular Coordination",
-    chkPT3: "Family Training & Guidance as a Core Partner in Motor Progress",
-    catAcad: "Academic Bridge Division",
-    srvAcadTitle: "Early Intervention & School Readiness",
-    srvAcadDesc: "Specialized academic bridges preparing neurodivergent children for mainstream school success with dyslexia support, cognitive acceleration, and shadow teacher guidance.",
-    chkAcad1: "Multisensory Phonetics & Pre-Math",
-    chkAcad2: "Classroom Etiquette & Executive Function",
-    chkAcad3: "Mainstream School Transition Portfolios",
-
-    // Physical and Motor Sports Activities Under Certified Fitness Coach
-    teamKicker: "Physical & Athletic Conditioning",
-    teamTitle: "Motor & Physical Sports Activities Supervised by Certified Fitness Coach",
-    teamSubtitle: "Specialized physical conditioning and motor coordination programs preparing our children for active sports competitions and athletic leagues.",
-    sport1Badge: "Physical Fitness & Agility",
-    sport1Title: "Physical Training & Neuromuscular Coordination",
-    sport1Role: "Supervised by Certified Fitness & Physical Coaches",
-    sport1Bio: "Developing gross motor agility, core strength, and motor balance through progressive circuits building confidence and autonomy.",
-    sport2Badge: "Competition & Championships",
-    sport2Title: "Preparation for Athletic Competitions",
-    sport2Role: "Special Olympics & Official Athletic Leagues",
-    sport2Bio: "Rigorous coaching in individual and team sports, preparing athletes with Down Syndrome for active competition and championships.",
-    sport3Badge: "Recreational Movement",
-    sport3Title: "Recreational Movement & Positive Energy Outlets",
-    sport3Role: "Equipped Sports Facilities & Safe Indoor Gyms",
-    sport3Bio: "Fun physical games promoting peer collaboration, active teamwork, and healthy physical discharge enhancing focus throughout the day.",
-
-    // Contact (Removed "Clinical / سريري" and form)
-    contactKicker: "Admissions & Intake",
-    contactTitle: "Schedule an Evaluation & Assessment Intake",
-    contactDesc: "Our admissions coordinator will contact you to review your child's needs and arrange a comprehensive baseline assessment.",
-    phoneLabel: "Direct Line",
-    whatsappLabel: "WhatsApp Inquiries",
-    whatsappAction: "Chat with Admissions Desk",
-    emailLabel: "Official Center & Owner Email",
-    socialHubTitle: "Official Social Media Channels",
-    socialHubDesc: "Follow our daily activities, student milestones, and community awareness programs across our official channels.",
-
-    // Locations (Two branches)
-    locationKicker: "Center Campuses",
-    locationTitle: "Two Dedicated Campuses for Boys & Girls",
-    locMalesBadge: "Boys Campus",
-    locMalesTitle: "Males Center (Boys Branch)",
-    locMalesDesc: "Dedicated campus featuring gross motor gyms, sports conditioning, speech labs, and daycare classrooms for boys.",
-    locMalesFeat1: "Full Indoor Sports Gym & Fitness Equipment",
-    locMalesFeat2: "Speech Therapy & Behavior Labs",
-    locFemalesBadge: "Girls Campus",
-    locFemalesTitle: "Females Center (Girls Branch)",
-    locFemalesDesc: "Dedicated campus featuring early intervention, sensory development, life skills suites, and classrooms for girls.",
-    locFemalesFeat1: "Early Intervention & Academic Readiness Suites",
-    locFemalesFeat2: "Life Skills & Social Independence Halls",
-
-    viewLocationMap: "View Location on Google Maps",
-
-    // Footer
-    footerMission: "A licensed sanctuary of developmental growth, speech, compassion, and autonomy under Ministry of Social Affairs License No. 204.",
-    footerAccred: "Accredited under License No. 204 • Supervised by Ministry of Social Affairs (Human Resources & Social Development).",
-    footerOwnerTitle: "Founder & General Director: Special Education Specialist Dema Abdullah Al-Tawil",
-    footerEmailLabel: "Management Email: ",
-    footerCopy: "Efada Day Care Center. All Rights Reserved."
-  },
   ar: {
     skip: "الانتقال للمحتوى الرئيسي",
-    topStripText: "مركز إفادة للرعاية النهارية ومتلازمة داون • ترخيص رسمي رقم 204 (وزارة الشؤون الاجتماعية)",
-    admissionsOpen: "باب التسجيل والتشخيص مفتوح الآن",
+    
+    // Top Strip
+    topStripText: "• مركز إفادة للرعاية النهارية (متلازمة داون) ▪ ترخيص رقم ٢٠٤ - وزارة الموارد البشرية والتنمية الاجتماعية",
+    registerPrompt: "سجل معنا",
     bookEvalShort: "حجز تقييم ↗",
+    
+    // Brand Header
     brand: "مركز إفادة",
-    brandSub: "للرعاية النهارية ومتلازمة داون",
+    brandSub: "للرعاية النهارية (متلازمة داون)",
     navAbout: "من نحن",
     navPillars: "ركائزنا",
-    navServices: "برامجنا المتخصصة",
-    navTeam: "أنشطة حركية ورياضية",
+    navPrograms: "برامج المركز",
+    navServices: "الخدمات المساندة",
     navContact: "التواصل والتسجيل",
     consultationCta: "حجز تقييم",
-    heroPill: "ترخيص رسمي معتمد برقم 204",
-    heroTitle: "نرعى الإمكانات..<br><span class=\"hero-gradient-text\">لنصنع الأبطال.</span>",
-    heroDesc: "في مركز إفادة للرعاية النهارية، يقدم فريقنا المتخصص برامج تأهيلية متكاملة في علاج النطق، وتعديل السلوك، والجاهزية الأكاديمية، والتدريب البدني والرياضي التنافسي.",
+    
+    // Hero
+    heroPill: "ترخيص رقم ٢٠٤ - وزارة الموارد البشرية والتنمية الاجتماعية",
+    heroSlogan: "أنا لمجتمعي إفادة",
+    heroHook: "تعرف مين أنا ؟ تعرف مركز إفادة للرعاية النهارية ؟",
     requestConsultation: "طلب تقييم تشخيصي شامل",
     explorePrograms: "استكشف البرامج والخدمات",
     statGoalMastery: "نسبة تحقيق الأهداف الفردية",
     statDedicatedRatio: "جلسات علاجية فردية 1:1",
     statChildrenSupported: "طفل تم تمكينهم ودمجهم",
-    emblemTitle: "درع الرعاية والتكامل النمائي",
-    emblemSubtitle: "مظلة الحماية، الدعم السلوكي، انطلاق النطق، وازدهار الاستقلالية في تناغم متكامل.",
-    badgeGreen: "نمو وأمان",
-    badgeGreenSub: "بيئة تأهيلية متخصصة",
-    badgeBlue: "النطق والتواصل",
-    badgeBlueSub: "طلاقة النطق وتواصل معزز",
-
+    
+    // Hero Showcase Card
+    emblemTitle: "مركز إفادة للرعاية النهارية",
+    badgeRatingHead: "حاصل على تقييم +A",
+    badgeRatingSub: "من وزارة الموارد البشرية والتنمية الاجتماعية",
+    badgeExpHighlight: "+١٣ عاماً",
+    badgeExpSub: "في تعليم وتدريب ذوي متلازمة داون وأسرهم",
+    
     // About Us
     aboutKicker: "من نحن",
-    aboutTitle: "مركز إفادة للرعاية النهارية ومتلازمة داون",
+    aboutTitle: "مركز إفادة للرعاية النهارية (متلازمة داون)",
     aboutStory1: "انطلقت مبادرة تأسيس مركز إفادة للرعاية النهارية من أخصائية التربية الخاصة <strong>{ديمة عبدالله الطويل}</strong>، وكان الهدف الرئيسي تأهيل وتدريب الأطفال من ذوي متلازمة داون وأمهاتهم في كيفية رعاية وتعليم ابنها بطريقة صحيحة.",
-    aboutStory2: "وقد عملت على مجموعات لتدريب الأطفال بشكل خاص منذ عام 2009م، وظل الحصول على ترخيص رسمي هاجساً لهذا الهدف حتى حصلوا عليه عام 2013م بمسمى <strong>مركز إفادة للرعاية النهارية</strong> تشرف عليه وزارة الشؤون الاجتماعية (الموارد البشرية والتنمية الاجتماعية) بترخيص رقم <strong>(204)</strong>.",
+    aboutStory2: "وقد عملت على مجموعات لتدريب الأطفال بشكل خاص منذ عام 2009م، وظل الحصول على ترخيص رسمي هاجساً لهذا الهدف حتى حصلوا عليه عام 2013م بمسمى <strong>مركز إفادة للرعاية النهارية</strong> تشرف عليه وزارة الموارد البشرية والتنمية الاجتماعية بترخيص رقم <strong>(٢٠٤)</strong>.",
     aboutVisionTitle: "رؤيتنا",
     aboutVisionText: "الوصول بقدرات الأطفال من ذوي متلازمة داون إلى أعلى مستوى يستطيعون من التعليم الأكاديمي والمهني والوصول إلى منافسات مهنية ورياضية.",
     aboutGoalsTitle: "الأهداف والرسالة",
@@ -196,11 +57,11 @@ const translations = {
     founderName: "أخصائية التربية الخاصة ديمة عبدالله الطويل",
     founderBio: "رائدة تأهيل ورعاية أطفال متلازمة داون وتدريب الكوادر التربوية بخبرة ممتدة منذ عام 2009م، ومؤسسة المبادرة التخصصية للدمج الرياضي والأكاديمي.",
     licenseLabel: "الترخيص الرسمي للمركز",
-    licenseVal: "ترخيص رقم 204 (وزارة الشؤون الاجتماعية)",
+    licenseVal: "ترخيص رقم ٢٠٤ - وزارة الموارد البشرية والتنمية الاجتماعية",
     sinceLabel: "تاريخ الانطلاق",
     sinceVal: "منذ 2009م (ترخيص رسمي 2013م)",
-
-    // Pillars
+    
+    // Four Identity Pillars
     pillarsKicker: "هويتنا وركائزنا",
     pillarsTitle: "أربع ركائز أساسية للرعاية والتأهيل",
     pillarsSubtitle: "مستوحاة من ألوان شعارنا الرسمي، حيث يمثل كل لون بُعداً جوهرياً في رحلة تطور واستقلالية طفلك.",
@@ -216,134 +77,235 @@ const translations = {
     pYellowLabel: "الركيزة الذهبية • شمس الانطلاق والأمل",
     pYellowTitle: "الاستقلالية وتحقيق الإنجازات",
     pYellowDesc: "تنمية المهارات الحياتية، والمنافسات الرياضية، والاحتفاء بكل إنجاز ومحطة جديدة نحو الاعتماد التام على الذات.",
-
-    // Services
-    servicesKicker: "برامجنا العلاجية والتربوية",
-    servicesTitle: "تدخلات متخصصة مصممة للنجاح",
-    servicesSubtitle: "يخضع كل طفل لتقييم تشخيصي متعدد الأبعاد قبل صياغة خطته التربوية الفردية (IEP) ومتابعتها بدقة.",
-    catSpeech: "قسم النطق والتخاطب",
-    srvSpeechTitle: "علاج النطق واللغة",
-    srvSpeechDesc: "علاج التأخر اللغوي، مخارج الحروف، وصعوبات التواصل الاجتماعي والتدريب على وسائل التواصل البديل والمعزز.",
-    chkSpeech1: "تصحيح مخارج الأصوات والنطق",
-    chkSpeech2: "بناء اللغة الاستقبالية والتعبيرية",
-    chkSpeech3: "أنظمة التواصل المعزز والبديل (AAC)",
-    catOT: "قسم العلاج الوظيفي",
-    srvOTTitle: "العلاج الوظيفي",
-    srvOTDesc: "تطوير المهارات الحركية الدقيقة، مهارات اليد وما قبل الكتابة، واستقلالية أنشطة الحياة اليومية والرعاية الذاتية.",
-    chkOT1: "استقلالية الرعاية الذاتية والتغذية",
-    chkOT2: "التآزر الحركي الدقيق ومهارات ما قبل الكتابة",
-    chkOT3: "التنظيم الحركي والتناسق العصبي",
-    catPT: "قسم العلاج الطبيعي",
-    srvPTTitle: "العلاج الطبيعي والتأهيل الحركي التنموي",
-    srvPTDesc: "برامج تأهيلية وعلاجية مصممة لتحسين المهارات الحركية الكبرى والدقيقة، تعزيز التوازن والاتزان العضلي، ومساعدة الطفل على تحقيق الاستقلالية الحركية والقدرة على الحركة بكفاءة وأمان.",
-    chkPT1: "التقييم الحركي الشامل ووظائف العضلات والمفاصل",
-    chkPT2: "برامج تقوية العضلات، تحسين التوازن، والتوافق العضلي العصبي",
-    chkPT3: "تدريب وإرشاد الأسرة كشريك أساسي في متابعة البرنامج الحركي",
-    catAcad: "قسم الجاهزية والدمج الأكاديمي",
-    srvAcadTitle: "التدخل المبكر والتهيئة المدرسية",
-    srvAcadDesc: "جسور تربوية متخصصة لإعداد الأطفال للالتحاق بالمدارس النظامية مع دعم صعوبات التعلم وتوجيه المعلم المساند.",
-    chkAcad1: "القراءة الصوتية متعددة الحواس ومفاهيم الحساب",
-    chkAcad2: "مهارات الصف والوظائف التنفيذية",
-    chkAcad3: "خطط وملفات الانتقال والدمج المدرسي",
-
-    // Physical and Motor Sports Activities Under Certified Fitness Coach
-    teamKicker: "التأهيل البدني والرياضي",
-    teamTitle: "أنشطة حركية وأنشطة رياضية تحت إشراف مدرب اللياقة البدنية",
-    teamSubtitle: "برامج رياضية وحركية مصممة خصيصاً لتطوير التوازن والتوافق العضلي العصبي والارتقاء بقدرات أبنائنا للمشاركة في المنافسات الرياضية والبطولات.",
-    sport1Badge: "اللياقة البدنية والتوافق",
-    sport1Title: "التدريب البدني والتوافق العضلي العصبي",
-    sport1Role: "تحت إشراف كادر تدريب رياضي متخصص",
-    sport1Bio: "تنمية المهارات الحركية الكبرى، تقوية عضلات الجذع والأطراف، وتحسين الاتزان الحركي عبر مسارات حركية متدرجة تمنح الطفل ثقة واستقلالية.",
-    sport2Badge: "الإعداد التنافسي والبطولات",
-    sport2Title: "الإعداد للمنافسات الرياضية والبطولات",
-    sport2Role: "برامج الأولمبياد والمنافسات المحلية والدولية",
-    sport2Bio: "تدريب مكثف على الألعاب الفردية والجماعية وصقل مهارات الرياضيين من ذوي متلازمة داون للمشاركة الفعالة في المحافل الرياضية والبطولات التنافسية.",
-    sport3Badge: "الأنشطة المهارية والحركية",
-    sport3Title: "الأنشطة الترفيهية والتفريغ الحركي الإيجابي",
-    sport3Role: "صالات رياضية مجهزة بأعلى معايير الأمان",
-    sport3Bio: "أنشطة حركية مرحة موجهة لتعزيز التفاعل الاجتماعي وروح الفريق، وتفريغ الطاقات الحركية بطرق إيجابية ترفع من كفاءة التركيز اليومي.",
-
-    // Contact
-    contactKicker: "القبول والتسجيل",
-    contactTitle: "احجز موعد تقييم وتشخيص",
-    contactDesc: "سيتواصل معكم منسق القبول والتسجيل لمراجعة احتياجات طفلكم وترتيب جلسة التقييم والتدريب الشامل.",
-    phoneLabel: "الخط المباشر",
-    whatsappLabel: "استفسارات واتساب",
-    whatsappAction: "تحدث مع قسم القبول والتسجيل",
-    emailLabel: "البريد الإلكتروني الرسمي للمركز والإدارة",
-    socialHubTitle: "قنواتنا الرسمية على وسائل التواصل",
-    socialHubDesc: "تابعوا أحدث أنشطة المركز اليومية، إنجازات أبنائنا، وبرامجنا التوعوية عبر قنواتنا المعتمدة.",
-
-    // Locations (Two branches)
-    locationKicker: "فروع المركز",
-    locationTitle: "فرعان مجهّزان للبنين والبنات بأحدث المعايير",
-    locMalesBadge: "فرع البنين",
-    locMalesTitle: "مركز البنين",
-    locMalesDesc: "مجمع تأهيلي وتربوي ورياضي متكامل مجهز بصالات لياقة وألعاب رياضية وعيادات نطق مخصصة للبنين.",
-    locMalesFeat1: "صالات لياقة بدنية وتدريب حركي متكاملة",
-    locMalesFeat2: "عيادات نطق وتأهيل سلوكي للبنين",
-    locFemalesBadge: "فرع البنات",
-    locFemalesTitle: "مركز البنات",
-    locFemalesDesc: "مجمع شامل للتأهيل والتدخل المبكر والمهارات الحياتية والتطوير الأكاديمي والرياضي مخصص للبنات.",
-    locFemalesFeat1: "أجنحة تدخل مبكر وتهيئة مدرسية للبنات",
-    locFemalesFeat2: "قاعات تدريب مهني ومهارات حياتية",
-
-    viewLocationMap: "عرض الموقع على خرائط جوجل",
-
+    
+    // Core Educational & Developmental Programs Section
+    programsKicker: "برامج المركز",
+    programsTitle: "البرامج المقدمة في مركز إفادة",
+    programsSubtitle: "مناهج وركائز تأهيلية شاملة مصممة لتمكين أبنائنا معرفياً ومهنياً ورياضياً",
+    
+    progEarlyTitle: "برنامج التدخل المبكر",
+    progEarlyPill1Head: "مهارات الاعتماد على النفس:",
+    progEarlyPill1Text: "التدريب على مهارات الاستقلالية اليومية (الحمام، تفريش الأسنان، الأكل، ارتداء الملابس).",
+    progEarlyPill2Head: "النمو اللغوي والتواصلي والمعرفي:",
+    progEarlyPill2Text: "تنمية المهارات اللغوية والإدراكية والتعبيرية.",
+    progEarlyPill3Head: "التطور الحركي:",
+    progEarlyPill3Text: "تطوير المهارات الحركية الكبرى والدقيقة.",
+    
+    progAcadTitle: "برنامج التهيئة الأكاديمية",
+    progAcadDesc: "تدريس تسع مواد أكاديمية أساسية لبناء قاعدة معرفية متينة تمهيداً للدمج المدرسي الناجح:",
+    subjMath: "رياضيات",
+    subjReading: "قراءة",
+    subjWriting: "كتابة",
+    subjScience: "علوم",
+    subjEnglish: "اللغة الإنجليزية",
+    subjGeography: "جغرافيا",
+    subjHistory: "تاريخ",
+    subjIslamic: "دين",
+    subjComputer: "حاسب آلي",
+    
+    progVocTitle: "برنامج التأهيل المهني",
+    progVocPill1Head: "التقييم والتوجيه المهني:",
+    progVocPill1Text: "قياس القدرات وتحديد المسار المهني الملائم.",
+    progVocPill2Head: "الوحدات التدريبية:",
+    progVocPill2Text: "تدريب عملي تطبيقي داخل الورش التدريبية وخارج المركز.",
+    progVocPill3Head: "تدريب منتهي بالتوظيف:",
+    progVocPill3Text: "تأهيل لسوق العمل وبرامج توظيف مباشرة.",
+    
+    progSportTitle: "البرنامج الرياضي",
+    progSportDesc: "تطوير اللياقة البدنية، والتوافق الحركي، وتدريبات كرة القدم والأنشطة الرياضية التنافسية والدمج المجتمعي.",
+    
+    // Support Services Section
+    servicesKicker: "الخدمات المساندة",
+    servicesTitle: "الخدمات المساندة في مركز إفادة",
+    servicesSubtitle: "عيادات متخصصة تقدم رعاية تأهيلية متكاملة وفق أحدث المعايير والبروتوكولات المعتمدة",
+    clinicSpeech: "عيادات النطق والتخاطب",
+    clinicBehavior: "عيادات تعديل السلوك",
+    clinicPT: "العلاج الطبيعي والتأهيل الحركي",
+    clinicOT: "العلاج الوظيفي والتكامل الحسي",
+    clinicFamily: "الإرشاد الأسري لأسر ذوي متلازمة داون وحديثي الولادة",
+    
+    // Contact & Booking Section
+    contactKicker: "التواصل والتسجيل",
+    contactTitle: "قسم التواصل والحجز",
+    contactSubtitle: "فرعان متكاملان للبنين والبنات تحت إشراف نخبة من الكوادر التأهيلية والتربوية",
+    urgencyBanner: "المقاعد محدودة - ننتظركم بحب لحجز مقاعدكم",
+    sponsorshipCallout: "التسجيل مجاناً عن طريق اختيار اسم مركز إفادة في موقع وزارة الموارد البشرية أو التواصل معنا",
+    
+    // Female Branch
+    branchFemaleTitle: "قسم الإناث / فرع البنات",
+    branchFemaleAge: "من الميلاد إلى عمر 45 سنة",
+    branchDirectLine: "الخط المباشر:",
+    branchSecondaryLine: "الخط الإضافي:",
+    branchSharedLine: "الخط المشترك:",
+    branchSocialChannel: "القناة الرسمية:",
+    branchSocialChannels: "القنوات الرسمية:",
+    branchViewMap: "عرض موقع الفرع على خرائط جوجل ↗",
+    
+    // Male Branch
+    branchMaleTitle: "قسم الذكور / فرع البنين",
+    branchMaleAge: "من 12 سنة إلى 45 سنة",
+    
     // Footer
-    footerMission: "صرح متخصص يرعى النمو، النطق، والدمج الرياضي والأكاديمي للأطفال وأسرهم بترخيص رقم 204 من وزارة الشؤون الاجتماعية.",
-    footerAccred: "مرخص ومعتمد برقم (204) بإشراف وزارة الشؤون الاجتماعية (الموارد البشرية والتنمية الاجتماعية).",
-    footerOwnerTitle: "المؤسسة والمديرة العامة: أخصائية التربية الخاصة ديمة عبدالله الطويل",
-    footerEmailLabel: "البريد الإلكتروني للإدارة: ",
-    footerCopy: "مركز إفادة للرعاية النهارية. جميع الحقوق محفوظة."
+    footerCopy: "مركز إفادة للرعاية النهارية. جميع الحقوق محفوظة.",
+    footerLicense: "ترخيص رقم ٢٠٤ - وزارة الموارد البشرية والتنمية الاجتماعية"
+  },
+  
+  en: {
+    skip: "Skip to main content",
+    
+    // Top Strip
+    topStripText: "• Efada Day Care Center (Down Syndrome) ▪ License No. 204 - Ministry of Human Resources and Social Development",
+    registerPrompt: "Register with us",
+    bookEvalShort: "Book Evaluation ↗",
+    
+    // Brand Header
+    brand: "EFADA CENTER",
+    brandSub: "Day Care Center (Down Syndrome)",
+    navAbout: "About Us",
+    navPillars: "Our Pillars",
+    navPrograms: "Center Programs",
+    navServices: "Support Services",
+    navContact: "Contact & Registration",
+    consultationCta: "Book Evaluation",
+    
+    // Hero
+    heroPill: "License No. 204 - Ministry of Human Resources and Social Development",
+    heroSlogan: "For my community, I am Efada",
+    heroHook: "Do you know who I am? Do you know Efada Day Care Center?",
+    requestConsultation: "Request Diagnostic Evaluation",
+    explorePrograms: "Explore Programs & Services",
+    statGoalMastery: "Individualized Goal Mastery",
+    statDedicatedRatio: "Dedicated 1:1 Therapy Ratio",
+    statChildrenSupported: "Children Empowered & Integrated",
+    
+    // Hero Showcase Card
+    emblemTitle: "Efada Day Care Center",
+    badgeRatingHead: "Rated A+ Quality",
+    badgeRatingSub: "Ministry of Human Resources & Social Development",
+    badgeExpHighlight: "13+ Years",
+    badgeExpSub: "In educating & training individuals with Down Syndrome & their families",
+    
+    // About Us
+    aboutKicker: "About Us",
+    aboutTitle: "Efada Day Care Center (Down Syndrome)",
+    aboutStory1: "The initiative to establish Efada Day Care Center was launched by Special Education Specialist <strong>Dema Abdullah Al-Tawil</strong>, with the primary goal of rehabilitating and training children with Down Syndrome and empowering their mothers in proper care and educational techniques.",
+    aboutStory2: "Having worked with specialized training groups for children since 2009, obtaining official licensing was a constant goal achieved in 2013 under the name <strong>Efada Day Care Center</strong>, supervised by the Ministry of Human Resources and Social Development under License No. <strong>(204)</strong>.",
+    aboutVisionTitle: "Our Vision",
+    aboutVisionText: "Enabling individuals with Down Syndrome to reach their highest potential in academic and vocational education, as well as competitive athletic and vocational leagues.",
+    aboutGoalsTitle: "Goals & Mission",
+    aboutGoal1: "Providing comprehensive rehabilitation and healthcare services for children with Down Syndrome.",
+    aboutGoal2: "Providing psychological rehabilitation for adolescents and specialized vocational and athletic training.",
+    aboutGoal3: "Developing and delivering training programs, knowledge resources, and support services for families.",
+    aboutGoal4: "Creating and delivering educational and rehabilitation curricula tailored for Down Syndrome.",
+    aboutGoal5: "Developing training and scientific materials to qualify coaches and teachers in Down Syndrome and developmental support.",
+    founderTag: "Founder & General Director",
+    founderName: "Special Education Specialist: Dema Abdullah Al-Tawil",
+    founderBio: "Pioneer in Down Syndrome pediatric rehabilitation, family empowerment, and vocational/athletic integration programs with active practice since 2009.",
+    licenseLabel: "Official License",
+    licenseVal: "License No. 204 - Ministry of Human Resources and Social Development",
+    sinceLabel: "Establishment",
+    sinceVal: "Since 2009 (Officially Licensed 2013)",
+    
+    // Four Identity Pillars
+    pillarsKicker: "Our Foundation",
+    pillarsTitle: "Four Core Pillars of Developmental Care",
+    pillarsSubtitle: "Represented by the colors of our official emblem, each element forms an essential dimension of your child's journey.",
+    pGreenLabel: "Green Pillar • The Roof & Stem",
+    pGreenTitle: "Shelter & Foundational Growth",
+    pGreenDesc: "A safe, structured sanctuary where children feel protected and grounded, laying the neurological groundwork for all future learning.",
+    pRedLabel: "Red Pillar • The Compassion Cradle",
+    pRedTitle: "Compassion & Behavioral Support",
+    pRedDesc: "Positive behavioral guidance and support programs based on understanding the child's emotions, building alternative skills, humanely modifying behavior, and fostering family cooperation.",
+    pBlueLabel: "Blue Pillar • The Trust Wing",
+    pBlueTitle: "Speech & Expressive Bridges",
+    pBlueDesc: "Speech-language therapy, articulation coaching, and augmentative and alternative communication (AAC) giving every child their rightful voice.",
+    pYellowLabel: "Gold Pillar • The Rising Sun",
+    pYellowTitle: "Autonomy & Milestone Triumphs",
+    pYellowDesc: "Life skills, gross motor dexterity, classroom readiness, and athletic integration celebrating genuine self-reliance.",
+    
+    // Core Educational & Developmental Programs Section
+    programsKicker: "Center Programs",
+    programsTitle: "Programs Offered at Efada Center",
+    programsSubtitle: "Comprehensive educational and developmental curricula designed to empower our children cognitively, vocationally, and athletically.",
+    
+    progEarlyTitle: "Early Intervention Program",
+    progEarlyPill1Head: "Self-Reliance Skills:",
+    progEarlyPill1Text: "Training on daily independence skills (toilet training, tooth brushing, eating, dressing).",
+    progEarlyPill2Head: "Linguistic, Communicative & Cognitive Growth:",
+    progEarlyPill2Text: "Developing receptive, cognitive, and expressive linguistic abilities.",
+    progEarlyPill3Head: "Motor Development:",
+    progEarlyPill3Text: "Advancing gross and fine motor coordination.",
+    
+    progAcadTitle: "Academic Readiness Program",
+    progAcadDesc: "Instruction in nine core academic subjects to build solid foundational literacy and numeracy for mainstream school inclusion:",
+    subjMath: "Mathematics",
+    subjReading: "Reading",
+    subjWriting: "Writing",
+    subjScience: "General Science",
+    subjEnglish: "English Language",
+    subjGeography: "Geography",
+    subjHistory: "History",
+    subjIslamic: "Islamic Studies",
+    subjComputer: "Computer Skills",
+    
+    progVocTitle: "Vocational Rehabilitation Program",
+    progVocPill1Head: "Vocational Assessment & Guidance:",
+    progVocPill1Text: "Assessing individual abilities and defining suitable career pathways.",
+    progVocPill2Head: "Hands-on Training Units:",
+    progVocPill2Text: "Applied practical training inside specialized workshops and external partner sites.",
+    progVocPill3Head: "Training Leading to Employment:",
+    progVocPill3Text: "Direct labor market readiness and structured placement programs.",
+    
+    progSportTitle: "Athletic & Physical Fitness Program",
+    progSportDesc: "Developing physical fitness, motor coordination, football drills, competitive sports tournaments, and community integration.",
+    
+    // Support Services Section
+    servicesKicker: "Support Services",
+    servicesTitle: "Support Services at Efada Center",
+    servicesSubtitle: "Specialized clinics delivering integrated therapeutic care in accordance with certified rehabilitation standards.",
+    clinicSpeech: "Speech & Language Pathology Clinics",
+    clinicBehavior: "Behavior Modification Clinics",
+    clinicPT: "Physical Therapy & Motor Rehabilitation",
+    clinicOT: "Occupational Therapy & Sensory Integration",
+    clinicFamily: "Family Guidance for Down Syndrome Families & Newborns",
+    
+    // Contact & Booking Section
+    contactKicker: "Contact & Admissions",
+    contactTitle: "Admissions & Booking Hub",
+    contactSubtitle: "Two fully equipped campuses for boys and girls under specialized pedagogical supervision",
+    urgencyBanner: "Limited seats available - We warmly look forward to reserving your child's place",
+    sponsorshipCallout: "Free government-sponsored registration by selecting Efada Center on the Ministry of Human Resources portal or by contacting us directly.",
+    
+    // Female Branch
+    branchFemaleTitle: "Female Section / Girls' Branch",
+    branchFemaleAge: "From Birth to 45 Years",
+    branchDirectLine: "Direct Line:",
+    branchSecondaryLine: "Secondary Line:",
+    branchSharedLine: "Shared Branch Line:",
+    branchSocialChannel: "Official Channel:",
+    branchSocialChannels: "Official Channels:",
+    branchViewMap: "View Campus Location on Google Maps ↗",
+    
+    // Male Branch
+    branchMaleTitle: "Male Section / Boys' Branch",
+    branchMaleAge: "From 12 to 45 Years",
+    
+    // Footer
+    footerCopy: "Efada Day Care Center. All Rights Reserved.",
+    footerLicense: "License No. 204 - Ministry of Human Resources and Social Development"
   }
-};
-
-const PHONE_NUMBER = "+966 5594 62848";
-const PHONE_TEL = "+966559462848";
-const WHATSAPP_URL = "https://wa.me/966559462848";
-const EMAIL_ADDRESS = "dema@efadacenter.com";
-
-const SOCIAL_LINKS = {
-  snapchat: "https://www.snapchat.com/add/efadacentef",
-  instagram: "https://www.instagram.com/efada_center?obrf=MXY1czhnbWw1eHhoNw==",
-  tiktok: "https://www.tiktok.com/@efadacenter1?_r=1&_t=ZS-9Ah0QWbDCtU",
-  x: "https://x.com/Efada_center?s=20",
-  whatsapp: "https://wa.me/966559462848"
 };
 
 /**
- * Configure contact links and strictly enforce LTR on phone number
+ * Enforce strict LTR on all phone numbers and numeric codes across the entire document
  */
-function configureContactLinks() {
-  const phoneText = document.getElementById("phoneText");
-  const phoneLink = document.getElementById("phoneLink");
-  const whatsappLink = document.getElementById("whatsappLink");
-  const emailLink = document.getElementById("emailLink");
-  const emailText = document.getElementById("emailText");
-
-  if (phoneText) {
-    phoneText.textContent = PHONE_NUMBER;
-    phoneText.setAttribute("dir", "ltr");
-    phoneText.style.direction = "ltr";
-    phoneText.style.unicodeBidi = "isolate";
-  }
-
-  if (phoneLink) {
-    phoneLink.setAttribute("href", `tel:${PHONE_TEL}`);
-  }
-
-  if (whatsappLink) {
-    whatsappLink.setAttribute("href", WHATSAPP_URL);
-  }
-
-  if (emailLink) {
-    emailLink.setAttribute("href", `mailto:${EMAIL_ADDRESS}`);
-  }
-
-  if (emailText) {
-    emailText.textContent = EMAIL_ADDRESS;
-  }
+function enforcePhoneBidiIntegrity() {
+  document.querySelectorAll('.phone-number, [dir="ltr"], a[href^="tel:"]').forEach((el) => {
+    el.setAttribute("dir", "ltr");
+    el.style.direction = "ltr";
+    el.style.unicodeBidi = "isolate";
+    el.style.display = "inline-block";
+  });
 }
 
 /**
@@ -354,7 +316,7 @@ function applyLanguage(lang) {
   document.documentElement.lang = currentLang;
   document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
 
-  const langDict = translations[currentLang] || translations.en;
+  const langDict = translations[currentLang] || translations.ar;
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
@@ -372,8 +334,8 @@ function applyLanguage(lang) {
     languageToggle.textContent = currentLang === "ar" ? "English" : "العربية";
   }
 
-  // Always re-apply LTR integrity to phone number
-  configureContactLinks();
+  // Always enforce phone LTR integrity
+  enforcePhoneBidiIntegrity();
 
   try {
     localStorage.setItem("efada_lang", currentLang);
@@ -461,6 +423,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // 4. Update footer year
   const yearEl = document.getElementById("year");
   if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
+    yearEl.textContent = "2026";
   }
+
+  // 5. Final enforcement of phone number LTR integrity
+  enforcePhoneBidiIntegrity();
 });

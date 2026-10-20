@@ -496,18 +496,29 @@ a[href^="tel:"] strong {
 .dot-blue { background-color: var(--brand-blue); }
 .dot-yellow { background-color: var(--brand-yellow); }
 
-.hero-content h1 {
-  font-size: clamp(2.3rem, 4.2vw, 3.4rem);
+.hero-content h1,
+.hero-slogan {
+  white-space: nowrap;
+  font-size: clamp(2rem, 4.4vw, 3.5rem);
   font-weight: 800;
-  line-height: 1.16;
-  letter-spacing: -0.8px;
-  margin-bottom: 20px;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+  color: var(--text-main);
 }
 
 .hero-gradient-text {
   background: linear-gradient(135deg, var(--brand-green) 0%, var(--brand-blue) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.hero-hook {
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  font-weight: 700;
+  color: var(--brand-green);
+  line-height: 1.5;
+  margin-bottom: 28px;
 }
 
 .hero-desc {
@@ -607,7 +618,7 @@ a[href^="tel:"] strong {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
-  padding: 44px 36px 32px;
+  padding: 38px 32px 26px;
   text-align: center;
   box-shadow: var(--shadow-lg);
   max-width: 440px;
@@ -617,11 +628,11 @@ a[href^="tel:"] strong {
 .emblem-img-wrap {
   display: flex;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .hero-emblem-img {
-  width: 210px;
+  width: 200px;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.08));
@@ -634,21 +645,15 @@ a[href^="tel:"] strong {
 }
 
 .emblem-badge-caption {
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .badge-title {
   display: inline-block;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: var(--text-main);
-  margin-bottom: 6px;
-}
-
-.emblem-badge-caption p {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-  line-height: 1.55;
+  margin-bottom: 0;
 }
 
 .floating-brand-badge {
@@ -657,7 +662,7 @@ a[href^="tel:"] strong {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 18px;
+  padding: 10px 16px;
   background: var(--bg-surface-elevated);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
@@ -667,8 +672,8 @@ a[href^="tel:"] strong {
 
 .floating-brand-badge strong {
   display: block;
-  font-size: 0.875rem;
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 800;
   color: var(--text-main);
 }
 
@@ -676,10 +681,21 @@ a[href^="tel:"] strong {
   display: block;
   font-size: 0.75rem;
   color: var(--text-muted);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.floating-brand-badge .stat-badge-highlight {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--brand-green);
+  line-height: 1.1;
 }
 
 .fb-icon {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  flex-shrink: 0;
 }
 
 .float-top-right {
@@ -816,287 +832,62 @@ a[href^="tel:"] strong {
 }
 
 /* ==========================================================================
-   Services Section (Quad Grid)
+   Section C: Core Educational & Developmental Programs Section
    ========================================================================== */
 
-.services-quad-grid {
+.programs-section {
+  background-color: var(--bg-surface);
+}
+
+.programs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 26px;
 }
 
-.service-item-card {
+.program-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 32px 28px;
+  border-radius: var(--radius-xl);
+  padding: 34px 28px;
   box-shadow: var(--shadow-sm);
   transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
-.service-item-card:hover {
+.program-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  inset-inline: 0;
+  height: 5px;
+  background: var(--card-accent, var(--brand-green));
+}
+
+.program-card.accent-red { --card-accent: var(--brand-red); }
+.program-card.accent-yellow { --card-accent: var(--brand-yellow); }
+.program-card.accent-green { --card-accent: var(--brand-green); }
+.program-card.accent-blue { --card-accent: var(--brand-blue); }
+
+.program-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
+  border-color: var(--card-accent);
 }
 
-.service-item-card.accent-blue:hover { border-color: var(--brand-blue); }
-.service-item-card.accent-green:hover { border-color: var(--brand-green); }
-.service-item-card.accent-red:hover { border-color: var(--brand-red); }
-.service-item-card.accent-yellow:hover { border-color: var(--brand-yellow); }
-
-.service-header {
+.program-card-header {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 18px;
-}
-
-.service-icon-box {
-  width: 48px;
-  height: 48px;
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.45rem;
-}
-
-.service-category {
-  font-size: 0.8125rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.service-item-card h3 {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: var(--text-main);
-  margin-bottom: 12px;
-  line-height: 1.35;
-}
-
-.service-item-card p {
-  font-size: 0.925rem;
-  color: var(--text-muted);
-  line-height: 1.65;
   margin-bottom: 20px;
 }
 
-.srv-checklist {
-  list-style: none;
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-top: 18px;
-  border-top: 1px dashed var(--border-color);
-}
-
-.srv-checklist li {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--text-main);
-  position: relative;
-  padding-inline-start: 22px;
-}
-
-.srv-checklist li::before {
-  content: '✓';
-  position: absolute;
-  inset-inline-start: 0;
-  color: var(--brand-green);
-  font-weight: 800;
-}
-
-/* ==========================================================================
-   Clinical Team Section
-   ========================================================================== */
-
-.team-section {
-  background-color: var(--bg-subtle);
-}
-
-.team-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 28px;
-}
-
-.team-member-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 34px 28px;
-  text-align: center;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition-smooth);
-}
-
-.team-member-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--brand-green);
-}
-
-.member-avatar-wrap {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-inline: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  margin-bottom: 18px;
-}
-
-.member-credential {
-  display: inline-block;
-  font-size: 0.775rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  margin-bottom: 6px;
-}
-
-.team-member-card h3 {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: var(--text-main);
-  margin-bottom: 4px;
-}
-
-.member-role {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--brand-green);
-  margin-bottom: 14px;
-}
-
-.member-bio {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-}
-
-/* ==========================================================================
-   Testimonials Section
-   ========================================================================== */
-
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 26px;
-}
-
-.testimonial-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 32px 28px;
-  box-shadow: var(--shadow-sm);
-  display: flex;
-  flex-direction: column;
-  transition: var(--transition-smooth);
-}
-
-.testimonial-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-}
-
-.rating-stars {
-  font-size: 1.15rem;
-  letter-spacing: 2px;
-  margin-bottom: 16px;
-}
-
-.testimonial-quote {
-  font-size: 0.975rem;
-  color: var(--text-main);
-  line-height: 1.7;
-  font-style: italic;
-  margin-bottom: 24px;
-  flex-grow: 1;
-}
-
-.testimonial-author strong {
-  display: block;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-}
-
-.testimonial-author span {
-  display: block;
-  font-size: 0.8125rem;
-  color: var(--text-muted);
-}
-
-/* ==========================================================================
-   Contact & Intake Section
-   ========================================================================== */
-
-.contact-section {
-  background-color: var(--bg-subtle);
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.05fr;
-  gap: 48px;
-  align-items: start;
-}
-
-.contact-info-col h2 {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: var(--text-main);
-  margin-bottom: 14px;
-  line-height: 1.25;
-}
-
-.contact-lead {
-  font-size: 1.05rem;
-  color: var(--text-muted);
-  line-height: 1.65;
-  margin-bottom: 32px;
-}
-
-.contact-cards-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.contact-box {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  padding: 20px 24px;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition-smooth);
-}
-
-.contact-box:hover {
-  border-color: var(--brand-green);
-  transform: translateX(4px);
-  box-shadow: var(--shadow-md);
-}
-
-[dir="rtl"] .contact-box:hover {
-  transform: translateX(-4px);
-}
-
-.contact-icon-box {
-  width: 52px;
-  height: 52px;
+.program-icon-box {
+  width: 50px;
+  height: 50px;
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -1105,172 +896,388 @@ a[href^="tel:"] strong {
   flex-shrink: 0;
 }
 
-.contact-text-wrap {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
+.program-card h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.35;
 }
 
-.contact-text-wrap small {
+.program-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Pillar bullet points inside program cards */
+.program-pillars-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.program-pillar-item {
+  font-size: 0.885rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  position: relative;
+  padding-inline-start: 22px;
+}
+
+.program-pillar-item::before {
+  content: '•';
+  position: absolute;
+  inset-inline-start: 4px;
+  color: var(--card-accent, var(--brand-green));
+  font-size: 1.3rem;
+  line-height: 1;
+  top: -2px;
+}
+
+.program-pillar-item strong {
+  color: var(--text-main);
+  font-weight: 700;
+  display: inline;
+}
+
+/* 9 Academic Subject Badges / Pills */
+.subject-pills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.subject-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  background: var(--brand-yellow-light);
+  color: #8c6005;
+  border: 1px solid var(--brand-yellow-border);
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: var(--transition-smooth);
+  cursor: default;
+}
+
+.subject-pill:hover {
+  background: var(--brand-yellow);
+  color: #14221b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(245, 191, 66, 0.35);
+}
+
+[data-theme="dark"] .subject-pill {
+  background: rgba(255, 210, 105, 0.15);
+  color: #ffd269;
+  border-color: rgba(255, 210, 105, 0.3);
+}
+
+[data-theme="dark"] .subject-pill:hover {
+  background: #ffd269;
+  color: #14221b;
+}
+
+/* ==========================================================================
+   Section D: Support Services Section (5 Clinics)
+   ========================================================================== */
+
+.support-services-section {
+  background-color: var(--bg-subtle);
+}
+
+.support-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.support-clinic-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 30px 22px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.support-clinic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--brand-green);
+}
+
+.support-clinic-icon-wrap {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--brand-green-light);
+  border: 2px solid var(--brand-green-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.support-clinic-card:hover .support-clinic-icon-wrap {
+  transform: scale(1.1);
+  background: var(--brand-green);
+  color: #ffffff;
+}
+
+.support-clinic-card h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Section E: Contact & Booking — Dual Branch Architecture
+   ========================================================================== */
+
+.contact-section {
+  background-color: var(--bg-surface);
+}
+
+.urgency-banner {
+  background: linear-gradient(135deg, #f5bf42 0%, #dfa931 100%);
+  color: #14221b;
+  padding: 14px 24px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.05rem;
+  box-shadow: 0 6px 20px rgba(245, 191, 66, 0.28);
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sponsorship-callout {
+  background: var(--brand-green-light);
+  border: 1px solid var(--brand-green-border);
+  color: var(--brand-green-hover);
+  padding: 16px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.975rem;
+  line-height: 1.6;
+  margin-bottom: 36px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+[data-theme="dark"] .sponsorship-callout {
+  color: #a3e6be;
+  background: rgba(66, 168, 116, 0.12);
+  border-color: rgba(66, 168, 116, 0.3);
+}
+
+.dual-branch-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.branch-dept-card {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 34px 28px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: var(--transition-smooth);
+  position: relative;
+}
+
+.branch-dept-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--brand-green);
+}
+
+.branch-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.branch-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.age-eligibility-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.825rem;
+  font-weight: 700;
+}
+
+.age-eligibility-pill.female {
+  background: var(--brand-red-light);
+  border: 1px solid var(--brand-red-border);
+  color: var(--brand-red);
+}
+
+.age-eligibility-pill.male {
+  background: var(--brand-blue-light);
+  border: 1px solid var(--brand-blue-border);
+  color: var(--brand-blue);
+}
+
+.branch-phones-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.phone-action-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.branch-phone-link {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  transition: var(--transition-smooth);
+}
+
+.branch-phone-link:hover {
+  background: var(--border-color);
+  border-color: var(--brand-green);
+  color: var(--brand-green);
+  transform: translateY(-2px);
+}
+
+.branch-phone-link small {
   font-size: 0.775rem;
   color: var(--text-muted);
   font-weight: 600;
+}
+
+.branch-wa-icon-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-md);
+  background: #25D366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  transition: var(--transition-smooth);
+}
+
+.branch-wa-icon-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+}
+
+.branch-socials-box {
+  padding: 16px 18px;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.branch-socials-box small {
+  display: block;
+  font-size: 0.775rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-.contact-text-wrap strong {
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: var(--text-main);
+.branch-socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.box-arrow {
-  font-size: 1.2rem;
-  color: var(--text-muted);
-  transition: transform 0.2s ease;
-}
-
-.contact-box:hover .box-arrow {
-  color: var(--brand-green);
-  transform: translate(2px, -2px);
-}
-
-[dir="rtl"] .contact-box:hover .box-arrow {
-  transform: scaleX(-1) translate(2px, -2px);
-}
-
-/* Consultation Form Card */
-.consultation-form-card {
+.branch-social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  padding: 40px 36px;
-  box-shadow: var(--shadow-md);
-}
-
-.consultation-form-card h3 {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--text-main);
-  margin-bottom: 6px;
-}
-
-.form-sub {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-bottom: 26px;
-}
-
-.form-field {
-  margin-bottom: 20px;
-}
-
-.form-field label {
-  display: block;
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 8px;
+  transition: var(--transition-smooth);
 }
 
-.form-input {
-  width: 100%;
-  padding: 12px 16px;
-  background-color: var(--bg-page);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  color: var(--text-main);
-  font-size: 0.95rem;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.form-input:focus {
-  outline: none;
-  border-color: var(--brand-green);
-  box-shadow: 0 0 0 3px var(--brand-green-light);
-}
-
-.form-row-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-/* ==========================================================================
-   Campus Location Section
-   ========================================================================== */
-
-.location-split {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  align-items: center;
-  gap: 48px;
-}
-
-.location-details h2 {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: var(--text-main);
-  margin-bottom: 14px;
-}
-
-.location-details p {
-  font-size: 1.05rem;
-  color: var(--text-muted);
-  line-height: 1.65;
-  margin-bottom: 24px;
-}
-
-.facility-features-list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-bottom: 28px;
-}
-
-.f-feat {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 0.925rem;
-  font-weight: 600;
-  color: var(--text-main);
-}
-
-.feat-icon {
-  font-size: 1.25rem;
-}
-
-.location-emblem-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  padding: 38px 30px;
-  text-align: center;
+.branch-social-pill:hover {
+  transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
 }
 
-.loc-emblem-img {
-  width: 140px;
-  height: auto;
-  margin-inline: auto;
-  margin-bottom: 18px;
-  object-fit: contain;
+.branch-social-pill.snapchat:hover {
+  background: #FFFC00;
+  color: #000000;
+  border-color: #e2df00;
 }
 
-.location-emblem-card strong {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: 800;
-  color: var(--text-main);
-  margin-bottom: 8px;
+.branch-social-pill.instagram:hover {
+  background: #E1306C;
+  color: #ffffff;
+  border-color: #c13584;
 }
 
-.location-emblem-card p {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.6;
+.branch-social-pill.x-twitter:hover {
+  background: #000000;
+  color: #ffffff;
+  border-color: #333333;
+}
+
+.branch-map-action {
+  margin-top: auto;
+  padding-top: 14px;
 }
 
 /* ==========================================================================
@@ -1511,246 +1518,29 @@ a[href^="tel:"] strong {
   word-break: break-all;
 }
 
-/* ==========================================================================
-   Clean Contact Hub & Social Media Grid
-   ========================================================================== */
-
-.contact-clean-layout {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 48px;
-  align-items: start;
-}
-
-.social-hub-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  padding: 36px 30px;
-  box-shadow: var(--shadow-md);
-}
-
-.social-hub-card h3 {
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: var(--text-main);
-  margin-bottom: 8px;
-}
-
-.social-hub-card p {
-  font-size: 0.925rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.social-links-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
-.social-btn {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 16px;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-color);
-  background: var(--bg-subtle);
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: var(--text-main);
-  transition: var(--transition-smooth);
-}
-
-.social-btn .soc-icon {
-  font-size: 1.3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-sm);
-}
-
-.social-btn.snapchat:hover {
-  background: #FFFC00;
-  color: #000000;
-  border-color: #e2df00;
-}
-
-.social-btn.instagram:hover {
-  background: #E1306C;
-  color: #ffffff;
-  border-color: #c13584;
-}
-
-.social-btn.tiktok:hover {
-  background: #000000;
-  color: #ffffff;
-  border-color: #25F4EE;
-}
-
-.social-btn.x-twitter:hover {
-  background: #000000;
-  color: #ffffff;
-  border-color: #333333;
-}
-
-.social-btn.whatsapp:hover {
-  background: #25D366;
-  color: #ffffff;
-  border-color: #25D366;
-}
-
-/* ==========================================================================
-   Dual Campus Branches (Males & Females)
-   ========================================================================== */
-
-.dual-location-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  margin-top: 36px;
-}
-
-.loc-branch-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  padding: 32px 28px;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition-smooth);
-}
-
-.loc-branch-card:hover {
-  border-color: var(--brand-green);
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-}
-
-.branch-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
-  border-radius: var(--radius-full);
-  font-size: 0.8rem;
-  font-weight: 800;
-  margin-bottom: 14px;
-}
-
-.branch-badge.males {
-  background: var(--brand-blue-light);
-  color: var(--brand-blue);
-}
-
-.branch-badge.females {
-  background: var(--brand-red-light);
-  color: var(--brand-red);
-}
-
-.loc-branch-card h3 {
-  font-size: 1.35rem;
-  font-weight: 800;
-  margin-bottom: 10px;
-  color: var(--text-main);
-}
-
-.loc-branch-card p {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 18px;
-}
-
-.loc-branch-feats {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-top: 16px;
-  border-top: 1px dashed var(--border-color);
-}
-
-.loc-feat-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.875rem;
-  color: var(--text-main);
-  font-weight: 600;
-}
-
-.loc-branch-action {
-  margin-top: 18px;
-  padding-top: 16px;
-  border-top: 1px dashed var(--border-color);
-}
-
-.loc-map-btn {
-  width: 100%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 10px 18px;
-  border-radius: var(--radius-md);
-  font-weight: 700;
-  font-size: 0.9rem;
-  transition: var(--transition-smooth);
-}
-
-.loc-map-btn:hover {
-  border-color: var(--brand-green);
-  color: var(--brand-green);
-  transform: translateY(-2px);
-}
-
-.owner-footer-highlight {
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px dashed rgba(255, 255, 255, 0.15);
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.owner-footer-highlight strong {
-  color: #ffffff;
-  font-size: 0.95rem;
-}
-
-.owner-footer-highlight a {
-  color: #7ee2b0;
-  font-weight: 700;
-  font-size: 0.875rem;
-}
-
 .footer-socials {
   display: flex;
-  gap: 10px;
-  margin-top: 14px;
+  gap: 12px;
+  margin-top: 18px;
 }
 
 .footer-social-link {
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.05rem;
   transition: var(--transition-smooth);
 }
 
 .footer-social-link:hover {
   background: var(--brand-green);
   transform: translateY(-2px);
+  color: #ffffff;
 }
 
 /* ==========================================================================
@@ -1765,8 +1555,7 @@ a[href^="tel:"] strong {
   }
 
   .about-grid,
-  .contact-clean-layout,
-  .dual-location-grid {
+  .dual-branch-grid {
     grid-template-columns: 1fr;
     gap: 36px;
   }
@@ -1790,6 +1579,7 @@ a[href^="tel:"] strong {
   .footer-layout {
     flex-direction: column;
     text-align: center;
+    gap: 24px;
   }
 
   .footer-copy-col {
@@ -1812,7 +1602,6 @@ a[href^="tel:"] strong {
     font-size: 0.75rem;
   }
 
-  .social-links-grid,
   .founder-meta-strip {
     grid-template-columns: 1fr;
   }
@@ -1829,6 +1618,10 @@ a[href^="tel:"] strong {
 
   .header-cta {
     display: none;
+  }
+
+  .hero-slogan {
+    white-space: normal;
   }
 }
 
