@@ -16,7 +16,6 @@ const translations = {
     navPillars: "Our Pillars",
     navServices: "Specialized Services",
     navTeam: "Motor & Sports Activities",
-    navTestimonials: "Success Stories",
     navContact: "Contact & Intake",
     consultationCta: "Book Evaluation",
     heroPill: "Official Accreditation • License No. 204",
@@ -118,20 +117,6 @@ const translations = {
     sport3Role: "Equipped Sports Facilities & Safe Indoor Gyms",
     sport3Bio: "Fun physical games promoting peer collaboration, active teamwork, and healthy physical discharge enhancing focus throughout the day.",
 
-    // Testimonials
-    testKicker: "Parent Testimonials",
-    testTitle: "Stories of Progress & Joy",
-    testSubtitle: "Families share their experiences partnering with Efada Center's dedicated specialists.",
-    test1Quote: "\"Finding Efada Center was the turning point for our family. Our son's speech progressed from single gestures to conversational phrases within 7 months.\"",
-    test1Author: "Dr. Ahmad & Rawan Shaker",
-    test1Role: "Parents of Sami, 4 Years",
-    test2Quote: "\"The sports coaching and occupational therapy gave our daughter the strength, posture, and coordination she needed to thrive in regular kindergarten.\"",
-    test2Author: "Hala Al-Zubi",
-    test2Role: "Mother of Layan, 5 Years",
-    test3Quote: "\"The therapists work as true partners with us. The regular updates and athletic competitions made us feel proud and empowered every step of the way.\"",
-    test3Author: "Omar & Dima Hijazi",
-    test3Role: "Parents of Kareem, 6 Years",
-
     // Contact (Removed "Clinical / سريري" and form)
     contactKicker: "Admissions & Intake",
     contactTitle: "Schedule an Evaluation & Assessment Intake",
@@ -177,7 +162,6 @@ const translations = {
     navPillars: "ركائزنا",
     navServices: "برامجنا المتخصصة",
     navTeam: "أنشطة حركية ورياضية",
-    navTestimonials: "قصص النجاح",
     navContact: "التواصل والتسجيل",
     consultationCta: "حجز تقييم",
     heroPill: "ترخيص رسمي معتمد برقم 204",
@@ -278,20 +262,6 @@ const translations = {
     sport3Title: "الأنشطة الترفيهية والتفريغ الحركي الإيجابي",
     sport3Role: "صالات رياضية مجهزة بأعلى معايير الأمان",
     sport3Bio: "أنشطة حركية مرحة موجهة لتعزيز التفاعل الاجتماعي وروح الفريق، وتفريغ الطاقات الحركية بطرق إيجابية ترفع من كفاءة التركيز اليومي.",
-
-    // Testimonials
-    testKicker: "آراء وتجارب أولياء الأمور",
-    testTitle: "قصص تقدم وإنجاز",
-    testSubtitle: "أسر تشاركنا محطات التحول وثمار العمل التكاملي مع فريق مركز إفادة.",
-    test1Quote: "\"كان انضمامنا لمركز إفادة نقطة تحول حقيقية لعائلتنا. تطور نطق ابننا من مجرد إيماءات إلى جمل حوارية كاملة خلال 7 أشهر فقط.\"",
-    test1Author: "د. أحمد وروان شاكر",
-    test1Role: "والدا الطفل سامي (4 سنوات)",
-    test2Quote: "\"برامج التدريب الحركي والرياضي منحت ابنتنا القوة البدنية والاتزان الذي مكنها من الاعتماد على نفسها والمشاركة في الأنشطة المدرسية بنجاح.\"",
-    test2Author: "هالة الزعبي",
-    test2Role: "والدة الطفلة ليان (5 سنوات)",
-    test3Quote: "\"فريق المركز يعمل معنا كشركاء حقيقيين. المشاركة في الأنشطة الرياضية ومتابعة التقارير الدورية جعلتنا فخورين بكل خطوة يخطوها طفلنا.\"",
-    test3Author: "عمر وديمة حجازي",
-    test3Role: "والدا الطفل كريم (6 سنوات)",
 
     // Contact
     contactKicker: "القبول والتسجيل",
