@@ -32,17 +32,17 @@
       <a class="brand" href="#home" aria-label="Efada Center Home">
         <img src="assets/logo.png" alt="Efada Center Official Emblem" class="brand-logo-img">
         <div class="brand-text">
-          <strong data-i18n="brand">مركز إفادة</strong>
-          <small data-i18n="brandSub">للرعاية النهارية (متلازمة داون)</small>
+          <strong data-i18n="brand">مركز إفادة للرعاية النهارية</strong>
+          <small data-i18n="brandSub">(متلازمة داون)</small>
         </div>
       </a>
 
       <nav class="main-nav" aria-label="Main Navigation">
         <a href="#about" data-i18n="navAbout">من نحن</a>
-        <a href="#pillars" data-i18n="navPillars">ركائزنا</a>
         <a href="#programs" data-i18n="navPrograms">برامج المركز</a>
         <a href="#services" data-i18n="navServices">الخدمات المساندة</a>
-        <a href="#contact" data-i18n="navContact">التواصل والتسجيل</a>
+        <a href="#platform" data-i18n="navPlatform">منصة إفادة</a>
+        <a href="#contact" data-i18n="navContact">القبول والتسجيل</a>
       </nav>
 
       <div class="header-controls">
@@ -77,6 +77,11 @@
           <p class="hero-hook" data-i18n="heroHook">
             تعرف مين أنا ؟ تعرف مركز إفادة للرعاية النهارية ؟
           </p>
+
+          <!-- Real Child Photo Banner -->
+          <div class="hero-child-banner">
+            <img src="assets/hero-child.png" alt="طفل مركز إفادة يبتسم ويلوح بيده" class="hero-child-img">
+          </div>
 
           <div class="hero-actions">
             <a href="#contact" class="btn btn-primary" data-i18n="requestConsultation">
@@ -134,6 +139,17 @@
               </div>
             </div>
           </div>
+
+          <!-- Hero Video Showcase Card (Efada Video 3) -->
+          <div class="hero-video-card">
+            <div class="video-card-header">
+              <span class="video-tag col-green">🎬 جولة تعريفية في مركز إفادة للرعاية النهارية</span>
+            </div>
+            <video class="responsive-video" controls playsinline preload="metadata">
+              <source src="assets/efada-video-3.mp4" type="video/mp4">
+              متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+          </div>
         </div>
       </div>
     </section>
@@ -149,7 +165,7 @@
               انطلقت مبادرة تأسيس مركز إفادة للرعاية النهارية من أخصائية التربية الخاصة <strong>{ديمة عبدالله الطويل}</strong>، وكان الهدف الرئيسي تأهيل وتدريب الأطفال من ذوي متلازمة داون وأمهاتهم في كيفية رعاية وتعليم ابنها بطريقة صحيحة.
             </p>
             <p data-i18n="aboutStory2">
-              وقد عملت على مجموعات لتدريب الأطفال بشكل خاص منذ عام 2009م، وظل الحصول على ترخيص رسمي هاجساً لهذا الهدف حتى حصلوا عليه عام 2013م بمسمى <strong>مركز إفادة للرعاية النهارية</strong> تشرف عليه وزارة الموارد البشرية والتنمية الاجتماعية بترخيص رقم <strong>(٢٠٤)</strong>.
+              وقد عملت على مجموعات لتدريب الأطفال بشكل خاص منذ عام 2009م، وظل الحصول على ترخيص رسمي هاجساً لهذا الهدف حتى حصلوا عليه عام 2013م بمسمى <strong>مركز إفادة للرعاية النهارية</strong> تشرف عليه وزارة الموارد البشرية والتنمية الاجتماعية بترخيص رقم <strong>(٢٠٤)</strong>. يضع مركز إفادة نصب عينيه استراتيجية طويلة الأمد تهدف لتحقيق تميز نوعي على مستوى الخدمات والبرامج المقدمة للأطفال وذويهم، وبناء عليه تم العمل على تطوير أساليب ونماذج للعمل تتماشى مع المجتمع اعتمد الفريق في التخطيط والتنفيذ على الأساليب العلمية الحديثة لكافة عناصر الخدمات.
             </p>
 
             <div class="about-vision-card">
@@ -164,7 +180,7 @@
               <h3 data-i18n="aboutGoalsTitle">الأهداف والرسالة</h3>
               <ul class="srv-checklist">
                 <li data-i18n="aboutGoal1">توفير خدمات التأهيل والرعاية الصحية للأطفال من ذوي متلازمة داون.</li>
-                <li data-i18n="aboutGoal2">توفير التأهيل النفسي للمراهقين والتأهيل المهني والرياضي.</li>
+                <li data-i18n="aboutGoal2">تطوير وتوفير برامج التأهيل النفسي، التأهيل المهني، والتأهيل الرياضي.</li>
                 <li data-i18n="aboutGoal3">تطوير وتوفير برامج التدريب والمعلومات والخدمات المساندة لأسر الأطفال.</li>
                 <li data-i18n="aboutGoal4">تطوير وتوفير برامج التعليم والتأهيل لذوي متلازمة داون.</li>
                 <li data-i18n="aboutGoal5">تطوير المواد والبرامج التدريبية والعلمية لتأهيل المدربين والمدرسين مهنياً في مجال متلازمة داون والقصور العقلي.</li>
@@ -175,14 +191,16 @@
           <div class="about-card-badge">
             <div class="founder-spotlight-card">
               <div class="founder-badge-header">
-                <div class="founder-avatar-wrap">👩🏻‍🏫</div>
+                <div class="founder-avatar-wrap">
+                  <img src="assets/logo.png" alt="شعار مركز إفادة" class="director-avatar-img">
+                </div>
                 <div>
-                  <span class="founder-label" data-i18n="founderTag">المؤسسة والمديرة العامة</span>
+                  <span class="founder-label" data-i18n="founderTag">المدير التنفيذي</span>
                   <h4 data-i18n="founderName">أخصائية التربية الخاصة ديمة عبدالله الطويل</h4>
                 </div>
               </div>
               <p class="founder-bio" data-i18n="founderBio">
-                رائدة تأهيل ورعاية أطفال متلازمة داون وتدريب الكوادر التربوية بخبرة ممتدة منذ عام 2009م، ومؤسسة المبادرة التخصصية للدمج الرياضي والأكاديمي.
+                خبرة ممتدة + ٢٠ عاماً في مجال تدريب وتأهيل ذوي متلازمة داون وأسرهم ،، مؤسسة عدة مبادرات منها : مبادرة أنا أقدر . مبادرة أنا لمجتمعي إفادة . مبادرة علاج طفل مقيم . مبادرة التدريب المنتهي بالتوظيف . مبادرة تفعيل العيادات الخارجية لتعليم الطلاب ذوي الدخل المحدود . مبادرة تصميم مناهج وبرامج تخصصية لذوي متلازمة داون . مبادرة تدريب الكوادر على برامج تخصصية للجلسات الفردية، إدارة المجموعة وتعديل السلوك.
               </p>
               <div class="founder-meta-strip">
                 <div class="meta-item">
@@ -190,69 +208,20 @@
                   <strong data-i18n="licenseVal">ترخيص رقم ٢٠٤ - وزارة الموارد البشرية والتنمية الاجتماعية</strong>
                 </div>
                 <div class="meta-item">
-                  <small data-i18n="sinceLabel">تاريخ الانطلاق</small>
-                  <strong data-i18n="sinceVal">منذ 2009م (ترخيص رسمي 2013م)</strong>
+                  <small data-i18n="sinceLabel">تاريخ افتتاح فروع المركز</small>
+                  <strong data-i18n="sinceVal">فرع البنات: ٢٠١٣م - فرع البنين: ٢٠٢٣م</strong>
                 </div>
               </div>
             </div>
+
+            <!-- Stage Performance Photo (Cropped) -->
+            <div class="stage-photo-card">
+              <img src="assets/stage-performance.png" alt="مشاركات وفعاليات أبناء مركز إفادة المسرحية" class="stage-photo-img">
+              <div class="stage-photo-caption">
+                <span>مشاركات أبنائنا وبناتنا في الفعاليات المسرحية والمحافل الوطنية</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Four Identity Pillars Section -->
-    <section class="section pillars-section" id="pillars">
-      <div class="container">
-        <div class="section-title-wrap">
-          <span class="section-kicker" data-i18n="pillarsKicker">هويتنا وركائزنا</span>
-          <h2 data-i18n="pillarsTitle">أربع ركائز أساسية للرعاية والتأهيل</h2>
-          <p class="section-subtitle" data-i18n="pillarsSubtitle">مستوحاة من ألوان شعارنا الرسمي، حيث يمثل كل لون بُعداً جوهرياً في رحلة تطور واستقلالية طفلك.</p>
-        </div>
-
-        <div class="pillars-grid">
-          <!-- Pillar 1: Green -->
-          <article class="brand-pillar-card card-green">
-            <div class="pillar-top-bar"></div>
-            <div class="pillar-icon-badge bg-green-light">
-              <span class="pillar-symbol col-green">🏛️</span>
-            </div>
-            <span class="pillar-color-label col-green" data-i18n="pGreenLabel">الركيزة الخضراء • المظلة والساق</span>
-            <h3 data-i18n="pGreenTitle">الأمان والنمو التأسيسي</h3>
-            <p data-i18n="pGreenDesc">ملاذ آمن وبيئة مهيأة يشعر فيها الطفل بالاستقرار النفسي الذي يُشكل الأساس العصبي والنفسي لكل تعلّم مستقبلي.</p>
-          </article>
-
-          <!-- Pillar 2: Red -->
-          <article class="brand-pillar-card card-red">
-            <div class="pillar-top-bar"></div>
-            <div class="pillar-icon-badge bg-red-light">
-              <span class="pillar-symbol col-red">❤️</span>
-            </div>
-            <span class="pillar-color-label col-red" data-i18n="pRedLabel">الركيزة الحمراء • مهد الرعاية والدفء</span>
-            <h3 data-i18n="pRedTitle">الدعم السلوكي باحتواء وعاطفة</h3>
-            <p data-i18n="pRedDesc">برامج الدعم والتوجيه السلوكي الإيجابي القائمة على تفهم مشاعر الطفل وبناء مهارات بديلة وتعديل السلوك بروح إنسانية وتعزيز التعاون الأسري.</p>
-          </article>
-
-          <!-- Pillar 3: Blue -->
-          <article class="brand-pillar-card card-blue">
-            <div class="pillar-top-bar"></div>
-            <div class="pillar-icon-badge bg-blue-light">
-              <span class="pillar-symbol col-blue">🌊</span>
-            </div>
-            <span class="pillar-color-label col-blue" data-i18n="pBlueLabel">الركيزة الزرقاء • جناح الثقة والتواصل</span>
-            <h3 data-i18n="pBlueTitle">النطق وبناء جسور التعبير</h3>
-            <p data-i18n="pBlueDesc">علاج اضطرابات النطق واللغة، وتدريب وسائل التواصل المعزز والبديل (AAC) لتمليك كل طفل صوته وقدرته على التعبير الواثق.</p>
-          </article>
-
-          <!-- Pillar 4: Yellow -->
-          <article class="brand-pillar-card card-yellow">
-            <div class="pillar-top-bar"></div>
-            <div class="pillar-icon-badge bg-yellow-light">
-              <span class="pillar-symbol col-yellow">☀️</span>
-            </div>
-            <span class="pillar-color-label col-yellow" data-i18n="pYellowLabel">الركيزة الذهبية • شمس الانطلاق والأمل</span>
-            <h3 data-i18n="pYellowTitle">الاستقلالية وتحقيق الإنجازات</h3>
-            <p data-i18n="pYellowDesc">تنمية المهارات الحياتية، والمنافسات الرياضية، والاحتفاء بكل إنجاز ومحطة جديدة نحو الاعتماد التام على الذات.</p>
-          </article>
         </div>
       </div>
     </section>
@@ -263,7 +232,7 @@
         <div class="section-title-wrap">
           <span class="section-kicker" data-i18n="programsKicker">برامج المركز</span>
           <h2 data-i18n="programsTitle">البرامج المقدمة في مركز إفادة</h2>
-          <p class="section-subtitle" data-i18n="programsSubtitle">مناهج وركائز تأهيلية شاملة مصممة لتمكين أبنائنا معرفياً ومهنياً ورياضياً</p>
+          <p class="section-subtitle" data-i18n="programsSubtitle">مناهج وبرامج تخصصية شاملة مصممة لتمكين أبنائنا معرفياً ومهنياً ورياضياً</p>
         </div>
 
         <div class="programs-grid">
@@ -296,7 +265,7 @@
               <h3 data-i18n="progAcadTitle">برنامج التهيئة الأكاديمية</h3>
             </div>
             <p class="program-desc" data-i18n="progAcadDesc">
-              تدريس المواد الأكاديمية الأساسية لبناء قاعدة معرفية متينة تمهيداً للدمج المدرسي الناجح:
+              مناهج أكاديمية :
             </p>
             <div class="subject-pills-wrap">
               <span class="subject-pill" data-i18n="subjMath">رياضيات</span>
@@ -315,7 +284,10 @@
           <article class="program-card accent-green">
             <div class="program-card-header">
               <span class="program-icon-box bg-green-light col-green">💼</span>
-              <h3 data-i18n="progVocTitle">برنامج التأهيل المهني</h3>
+              <div>
+                <h3 data-i18n="progVocTitle">برنامج التأهيل المهني</h3>
+                <span class="badge-in-progress" data-i18n="progVocInProgress">(قيد التنفيذ)</span>
+              </div>
             </div>
             <ul class="program-pillars-list">
               <li class="program-pillar-item">
@@ -324,11 +296,10 @@
               </li>
               <li class="program-pillar-item">
                 <strong data-i18n="progVocPill2Head">الوحدات التدريبية:</strong>
-                <span data-i18n="progVocPill2Text">تدريب عملي تطبيقي داخل الورش التدريبية وخارج المركز.</span>
+                <span data-i18n="progVocPill2Text">التدريب في الوحدات التدريبية داخل وخارج المركز.</span>
               </li>
               <li class="program-pillar-item">
-                <strong data-i18n="progVocPill3Head">تدريب منتهي بالتوظيف:</strong>
-                <span data-i18n="progVocPill3Text">تأهيل لسوق العمل وبرامج توظيف مباشرة.</span>
+                <strong data-i18n="progVocPill3Head">تدريب منتهي بالتوظيف</strong>
               </li>
             </ul>
           </article>
@@ -340,8 +311,15 @@
               <h3 data-i18n="progSportTitle">البرنامج الرياضي</h3>
             </div>
             <p class="program-desc" data-i18n="progSportDesc">
-              تطوير اللياقة البدنية، والتوافق الحركي، وتدريبات كرة القدم والأنشطة الرياضية التنافسية والدمج المجتمعي.
+              نادي إفادة للأولمبياد الخاص للتأهيل للبطولات المحلية والدولية بالتعاون مع وزارة الرياضة ممثلة بالاتحاد السعودي للرياضة الجامعية وبالشراكة مع جامعة الأميرة نورة بنت عبدالرحمن
             </p>
+            <!-- Sports Program Video (Efada Video 2) -->
+            <div class="program-video-wrap">
+              <video class="responsive-video program-video" controls playsinline preload="metadata">
+                <source src="assets/efada-video-2.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+              </video>
+            </div>
           </article>
         </div>
       </div>
@@ -353,7 +331,7 @@
         <div class="section-title-wrap">
           <span class="section-kicker" data-i18n="servicesKicker">الخدمات المساندة</span>
           <h2 data-i18n="servicesTitle">الخدمات المساندة في مركز إفادة</h2>
-          <p class="section-subtitle" data-i18n="servicesSubtitle">عيادات متخصصة تقدم رعاية تأهيلية متكاملة وفق أحدث المعايير والبروتوكولات المعتمدة</p>
+          <p class="section-subtitle" data-i18n="servicesSubtitle">عيادات متخصصة تقدم رعاية تأهيلية متكاملة</p>
         </div>
 
         <div class="support-services-grid">
@@ -390,13 +368,39 @@
       </div>
     </section>
 
+    <!-- Section: Educational Platform -->
+    <section class="section platform-section" id="platform">
+      <div class="container">
+        <div class="platform-card">
+          <div class="platform-content">
+            <span class="section-kicker" data-i18n="platformKicker">المنصة الرقمية</span>
+            <h2 class="platform-heading" data-i18n="platformHeading">منصة إفادة التعليمية</h2>
+            <p class="platform-desc" data-i18n="platformDesc">
+              منظومة إلكترونية متخصصة لمتابعة الخطط الفردية، وتطوير المهارات التعليمية والتأهيلية لذوي متلازمة داون وأسرهم بكل سهولة.
+            </p>
+            <div class="platform-actions">
+              <a href="https://apps.apple.com/sa/app/efada-center/id1661616719" class="btn btn-primary platform-btn" target="_blank" rel="noopener noreferrer">
+                <span data-i18n="platformBtn">تحميل منصة إفادة التعليمية ↗</span>
+              </a>
+            </div>
+          </div>
+          <div class="platform-badge-col">
+            <div class="platform-app-box">
+              <img src="assets/logo.png" alt="شعار منصة إفادة التعليمية" class="platform-app-logo">
+              <span class="platform-app-store-tag">متوفر على App Store</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Section E: Contact & Booking Section (Dual Branch Architecture) -->
     <section class="section contact-section" id="contact">
       <div class="container">
         <div class="section-title-wrap">
-          <span class="section-kicker" data-i18n="contactKicker">التواصل والتسجيل</span>
-          <h2 data-i18n="contactTitle">قسم التواصل والتسجيل</h2>
-          <p class="section-subtitle" data-i18n="contactSubtitle">فرعان متكاملان للبنين والبنات تحت إشراف نخبة من الكوادر التأهيلية والتربوية</p>
+          <span class="section-kicker" data-i18n="contactKicker">القبول والتسجيل</span>
+          <h2 data-i18n="contactTitle">قسم القبول والتسجيل</h2>
+          <p class="section-subtitle" data-i18n="contactSubtitle">قسم القبول والتسجيل فرعان في مدينة الرياض (بنين - بنات) تحت قيادة وتدريب نخبة من الكوادر</p>
         </div>
 
         <!-- Ministry of Human Resources Application & Free Registration Card (Prominently Placed Above Numbers) -->
@@ -417,7 +421,7 @@
             <div class="mrc-callout-box">
               <span class="mrc-callout-icon">💡</span>
               <p class="mrc-callout-text" data-i18n="sponsorshipCallout">
-                التسجيل مجاناً عن طريق اختيار اسم مركز إفادة في موقع وزارة الموارد البشرية أو التواصل معنا
+                التسجيل مجاناً في المواعيد التي تحددها الوزارة عن طريق اختيار اسم مركز إفادة للرعاية النهارية عبر موقع وزارة الموارد البشرية والتنمية الاجتماعية
               </p>
             </div>
           </div>
@@ -428,8 +432,8 @@
           <!-- Female Section / Girls' Branch -->
           <article class="branch-dept-card">
             <div class="branch-header-top">
-              <h3 class="branch-title" data-i18n="branchFemaleTitle">قسم الإناث / فرع البنات</h3>
-              <span class="age-eligibility-pill female" data-i18n="branchFemaleAge">من الميلاد إلى عمر 45 سنة</span>
+              <h3 class="branch-title" data-i18n="branchFemaleTitle">فرع البنات</h3>
+              <span class="age-eligibility-pill female" data-i18n="branchFemaleAge">من الميلاد إلى 45 سنة (بنات) • ومن الميلاد إلى 12 سنة (بنين)</span>
             </div>
 
             <!-- Phone Lines -->
@@ -489,28 +493,28 @@
           <!-- Male Section / Boys' Branch -->
           <article class="branch-dept-card">
             <div class="branch-header-top">
-              <h3 class="branch-title" data-i18n="branchMaleTitle">قسم الذكور / فرع البنين</h3>
+              <h3 class="branch-title" data-i18n="branchMaleTitle">فرع البنين</h3>
               <span class="age-eligibility-pill male" data-i18n="branchMaleAge">من 12 سنة إلى 45 سنة</span>
             </div>
 
-            <!-- Phone Lines -->
+            <!-- Phone Lines: Reversed Order as Requested (0559462848 first, 0508409763 second) -->
             <div class="branch-phones-group">
-              <div class="phone-action-row">
-                <a href="tel:0508409763" class="branch-phone-link">
-                  <span class="phone-symbol" aria-hidden="true">📞</span>
-                  <strong class="phone-number" dir="ltr">0508409763</strong>
-                </a>
-                <a href="https://wa.me/966508409763" class="branch-wa-icon-btn" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp 0508409763">
-                  <svg class="social-svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                </a>
-              </div>
-
               <div class="phone-action-row">
                 <a href="tel:0559462848" class="branch-phone-link">
                   <span class="phone-symbol" aria-hidden="true">📞</span>
                   <strong class="phone-number" dir="ltr">0559462848</strong>
                 </a>
                 <a href="https://wa.me/966559462848" class="branch-wa-icon-btn" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp 0559462848">
+                  <svg class="social-svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                </a>
+              </div>
+
+              <div class="phone-action-row">
+                <a href="tel:0508409763" class="branch-phone-link">
+                  <span class="phone-symbol" aria-hidden="true">📞</span>
+                  <strong class="phone-number" dir="ltr">0508409763</strong>
+                </a>
+                <a href="https://wa.me/966508409763" class="branch-wa-icon-btn" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp 0508409763">
                   <svg class="social-svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                 </a>
               </div>
