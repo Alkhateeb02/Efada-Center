@@ -1600,6 +1600,251 @@ a[href^="tel:"] strong {
 }
 
 /* ==========================================================================
+   Ministry of Human Resources Application & Free Registration Card
+   ========================================================================== */
+
+.ministry-registration-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 24px 28px;
+  margin-bottom: 36px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.ministry-registration-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #158285, #2f8c5c, #ffd269);
+}
+
+.ministry-registration-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(21, 130, 133, 0.4);
+}
+
+.mrc-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mrc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.mrc-logo-holder {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mrc-logo-img {
+  height: 48px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+}
+
+[data-theme="dark"] .mrc-logo-img {
+  filter: brightness(1.2) contrast(1.1);
+}
+
+.mrc-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.mrc-tag {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #158285;
+  letter-spacing: 0.3px;
+}
+
+[data-theme="dark"] .mrc-tag {
+  color: #38bdf8;
+}
+
+.mrc-service-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #158285;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.mrc-service-btn:hover {
+  color: var(--brand-green);
+  text-decoration: underline;
+  transform: translateX(-4px);
+}
+
+[data-theme="dark"] .mrc-service-btn {
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .mrc-service-btn:hover {
+  color: #7dd3fc;
+}
+
+.mrc-callout-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: rgba(245, 191, 66, 0.12);
+  border: 1px solid rgba(245, 191, 66, 0.35);
+  border-radius: var(--radius-lg);
+  color: #925c04;
+}
+
+[data-theme="dark"] .mrc-callout-box {
+  background: rgba(255, 210, 105, 0.1);
+  border-color: rgba(255, 210, 105, 0.25);
+  color: #ffe18f;
+}
+
+.mrc-callout-icon {
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.mrc-callout-text {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.phone-symbol {
+  font-size: 1.05rem;
+  margin-inline-end: 6px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ==========================================================================
+   Site Footer & Tech Support Section
+   ========================================================================== */
+
+.site-footer {
+  background: #101c16;
+  color: #e5ede8;
+  padding: 40px 0 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.footer-brand-col .f-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-brand-col .f-logo-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.footer-brand-col strong {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.footer-support-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-tech-support-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-pill);
+  transition: var(--transition-smooth);
+}
+
+.footer-tech-support-badge:hover {
+  background: rgba(47, 140, 92, 0.2);
+  border-color: rgba(47, 140, 92, 0.5);
+  transform: translateY(-2px);
+}
+
+.footer-tech-support-badge .support-icon {
+  font-size: 1.15rem;
+}
+
+.footer-tech-support-badge .support-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #d1fae5;
+}
+
+.footer-tech-support-badge .support-phone-link {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.footer-tech-support-badge .support-phone-link:hover {
+  color: #6ee7b7;
+  text-decoration: underline;
+}
+
+.footer-copy-col {
+  text-align: end;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-license-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.footer-license-link:hover {
+  color: #6ee7b7;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
    Responsive Adaptations
    ========================================================================== */
 
@@ -1688,6 +1933,18 @@ a[href^="tel:"] strong {
 
   .hero-slogan {
     white-space: normal;
+  }
+
+  .mrc-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  
+  .mrc-callout-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 }
 

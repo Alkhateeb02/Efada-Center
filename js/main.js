@@ -27,10 +27,9 @@ const translations = {
     heroPill: "ترخيص رقم ٢٠٤ - وزارة الموارد البشرية والتنمية الاجتماعية",
     heroSlogan: "أنا لمجتمعي إفادة",
     heroHook: "تعرف مين أنا ؟ تعرف مركز إفادة للرعاية النهارية ؟",
-    requestConsultation: "طلب تقييم تشخيصي شامل",
+    requestConsultation: "طلب تقييم شامل",
     explorePrograms: "استكشف البرامج والخدمات",
     statGoalMastery: "نسبة تحقيق الأهداف الفردية",
-    statDedicatedRatio: "جلسات علاجية فردية 1:1",
     statChildrenSupported: "طفل تم تمكينهم ودمجهم",
     
     // Hero Showcase Card
@@ -92,7 +91,7 @@ const translations = {
     progEarlyPill3Text: "تطوير المهارات الحركية الكبرى والدقيقة.",
     
     progAcadTitle: "برنامج التهيئة الأكاديمية",
-    progAcadDesc: "تدريس تسع مواد أكاديمية أساسية لبناء قاعدة معرفية متينة تمهيداً للدمج المدرسي الناجح:",
+    progAcadDesc: "تدريس المواد الأكاديمية الأساسية لبناء قاعدة معرفية متينة تمهيداً للدمج المدرسي الناجح:",
     subjMath: "رياضيات",
     subjReading: "قراءة",
     subjWriting: "كتابة",
@@ -124,11 +123,13 @@ const translations = {
     clinicOT: "العلاج الوظيفي والتكامل الحسي",
     clinicFamily: "الإرشاد الأسري لأسر ذوي متلازمة داون وحديثي الولادة",
     
-    // Contact & Booking Section
+    // Contact & Registration Section
     contactKicker: "التواصل والتسجيل",
-    contactTitle: "قسم التواصل والحجز",
+    contactTitle: "قسم التواصل والتسجيل",
     contactSubtitle: "فرعان متكاملان للبنين والبنات تحت إشراف نخبة من الكوادر التأهيلية والتربوية",
     urgencyBanner: "المقاعد محدودة - ننتظركم بحب لحجز مقاعدكم",
+    ministryServicePortal: "بوابة وزارة الموارد البشرية والتنمية الاجتماعية",
+    ministryServiceTitle: "رابط التقديم على خدمات المراكز النهارية ↗",
     sponsorshipCallout: "التسجيل مجاناً عن طريق اختيار اسم مركز إفادة في موقع وزارة الموارد البشرية أو التواصل معنا",
     
     // Female Branch
@@ -147,6 +148,7 @@ const translations = {
     
     // Footer
     footerCopy: "مركز إفادة للرعاية النهارية. جميع الحقوق محفوظة.",
+    footerTechSupport: "قسم الدعم الفني:",
     footerLicense: "ترخيص رقم ٢٠٤ - وزارة الموارد البشرية والتنمية الاجتماعية"
   },
   
@@ -172,10 +174,9 @@ const translations = {
     heroPill: "License No. 204 - Ministry of Human Resources and Social Development",
     heroSlogan: "For my community, I am Efada",
     heroHook: "Do you know who I am? Do you know Efada Day Care Center?",
-    requestConsultation: "Request Diagnostic Evaluation",
+    requestConsultation: "Request Comprehensive Evaluation",
     explorePrograms: "Explore Programs & Services",
     statGoalMastery: "Individualized Goal Mastery",
-    statDedicatedRatio: "Dedicated 1:1 Therapy Ratio",
     statChildrenSupported: "Children Empowered & Integrated",
     
     // Hero Showcase Card
@@ -237,7 +238,7 @@ const translations = {
     progEarlyPill3Text: "Advancing gross and fine motor coordination.",
     
     progAcadTitle: "Academic Readiness Program",
-    progAcadDesc: "Instruction in nine core academic subjects to build solid foundational literacy and numeracy for mainstream school inclusion:",
+    progAcadDesc: "Instruction in core academic subjects to build solid foundational literacy and numeracy for mainstream school inclusion:",
     subjMath: "Mathematics",
     subjReading: "Reading",
     subjWriting: "Writing",
@@ -269,11 +270,13 @@ const translations = {
     clinicOT: "Occupational Therapy & Sensory Integration",
     clinicFamily: "Family Guidance for Down Syndrome Families & Newborns",
     
-    // Contact & Booking Section
+    // Contact & Registration Section
     contactKicker: "Contact & Admissions",
-    contactTitle: "Admissions & Booking Hub",
+    contactTitle: "Admissions & Registration Hub",
     contactSubtitle: "Two fully equipped campuses for boys and girls under specialized pedagogical supervision",
     urgencyBanner: "Limited seats available - We warmly look forward to reserving your child's place",
+    ministryServicePortal: "Ministry of Human Resources & Social Development Portal",
+    ministryServiceTitle: "Day Care Centers Application Portal ↗",
     sponsorshipCallout: "Free government-sponsored registration by selecting Efada Center on the Ministry of Human Resources portal or by contacting us directly.",
     
     // Female Branch
@@ -292,6 +295,7 @@ const translations = {
     
     // Footer
     footerCopy: "Efada Day Care Center. All Rights Reserved.",
+    footerTechSupport: "Technical Support:",
     footerLicense: "License No. 204 - Ministry of Human Resources and Social Development"
   }
 };
