@@ -145,7 +145,7 @@ const translations = {
     
     // Engagement Section (Complaints, Partnerships & Careers)
     engagementKicker: "التواصل والشراكات والتوظيف",
-    engagementTitle: "الشكاوى، الشراكات المجتمعية وفرص الانضمام",
+    engagementTitle: "تواصل معنا",
     complaintsCardTitle: "للشكاوى والاقتراحات",
     complaintsWhatsappLabel: "لرفع الشكوى / الاقتراح للرئيس التنفيذي عبر رسالة نصية على الواتساب:",
     complaintsEmailLabel: "لرفع الشكوى / الاقتراح للرئيس التنفيذي عبر الإيميل:",
@@ -309,7 +309,7 @@ const translations = {
     
     // Engagement Section (Complaints, Partnerships & Careers)
     engagementKicker: "Contact, Partnerships & Careers",
-    engagementTitle: "Complaints, Community Partnerships & Careers",
+    engagementTitle: "Contact Us",
     complaintsCardTitle: "Complaints & Suggestions",
     complaintsWhatsappLabel: "Submit complaint / suggestion to CEO via WhatsApp text:",
     complaintsEmailLabel: "Submit complaint / suggestion to CEO via Email:",
