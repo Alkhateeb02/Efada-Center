@@ -2088,6 +2088,53 @@ a[href^="tel:"] strong {
   letter-spacing: 0.3px;
 }
 
+/* Final Standalone Video Showcase Section */
+.final-video-section {
+  background-color: var(--bg-subtle);
+  padding: 80px 0 96px;
+}
+
+.final-video-card {
+  max-width: 960px;
+  margin-inline: auto;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-smooth);
+}
+
+.final-video-card:hover {
+  box-shadow: 0 20px 45px rgba(20, 34, 27, 0.12);
+  border-color: var(--brand-green);
+}
+
+.final-video-header {
+  padding: 34px 36px 20px;
+  text-align: center;
+}
+
+.final-video-title {
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  font-weight: 800;
+  color: var(--text-main);
+  margin-top: 6px;
+  line-height: 1.35;
+}
+
+.final-video-frame {
+  width: 100%;
+  background: #000000;
+  overflow: hidden;
+}
+
+.final-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+
 /* ==========================================================================
    Responsive Adaptations
    ========================================================================== */
@@ -2216,6 +2263,14 @@ a[href^="tel:"] strong {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+  }
+
+  .final-video-section {
+    padding: 50px 0 64px;
+  }
+
+  .final-video-header {
+    padding: 24px 18px 16px;
   }
 }
 

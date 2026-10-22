@@ -133,6 +133,10 @@ const translations = {
     branchMaleTitle: "فرع البنين",
     branchMaleAge: "من 12 سنة إلى 45 سنة",
     
+    // Final Standalone Video Section
+    finalVideoKicker: "مشاهد من مركز إفادة",
+    finalVideoTitle: "لحظات ملهمة وإنجازات متواصلة في مركز إفادة للرعاية النهارية",
+    
     // Footer
     footerCopy: "مركز إفادة للرعاية النهارية. جميع الحقوق محفوظة.",
     footerLicense: "ترخيص رقم ٢٠٤ - وزارة الموارد البشرية والتنمية الاجتماعية"
@@ -265,6 +269,10 @@ const translations = {
     // Male Branch
     branchMaleTitle: "Boys' Branch",
     branchMaleAge: "From 12 to 45 Years",
+    
+    // Final Standalone Video Section
+    finalVideoKicker: "Center Highlights",
+    finalVideoTitle: "Inspiring Moments & Continuous Milestones at Efada Day Care Center",
     
     // Footer
     footerCopy: "Efada Day Care Center. All Rights Reserved.",
