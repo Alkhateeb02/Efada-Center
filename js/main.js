@@ -127,7 +127,7 @@ const translations = {
     // Contact & Registration Section
     contactKicker: "القبول والتسجيل",
     contactTitle: "قسم القبول والتسجيل",
-    contactSubtitle: "قسم القبول والتسجيل فرعان في مدينة الرياض (بنين - بنات) تحت قيادة وتدريب نخبة من الكوادر",
+    contactSubtitle: "فرعان في مدينة الرياض (بنين - بنات) تحت قيادة وتدريب نخبة من الكوادر",
     urgencyBanner: "المقاعد محدودة - ننتظركم بحب لحجز مقاعدكم",
     ministryServicePortal: "بوابة وزارة الموارد البشرية والتنمية الاجتماعية",
     ministryServiceTitle: "رابط التقديم على خدمات المراكز النهارية ↗",
@@ -291,7 +291,7 @@ const translations = {
     // Contact & Registration Section
     contactKicker: "Admissions & Registration",
     contactTitle: "Admissions & Registration Department",
-    contactSubtitle: "Admissions and registration in two Riyadh campuses (Boys - Girls) under the leadership and training of an elite team",
+    contactSubtitle: "Two Riyadh campuses (Boys - Girls) under the leadership and training of an elite team",
     urgencyBanner: "Limited seats available - We warmly look forward to reserving your child's place",
     ministryServicePortal: "Ministry of Human Resources & Social Development Portal",
     ministryServiceTitle: "Day Care Centers Application Portal ↗",
