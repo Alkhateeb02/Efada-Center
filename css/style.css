@@ -851,15 +851,21 @@ a[href^="tel:"] strong {
 
 .programs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 26px;
+}
+
+@media (max-width: 860px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .program-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
-  padding: 34px 28px;
+  padding: 30px 26px;
   box-shadow: var(--shadow-sm);
   transition: var(--transition-smooth);
   display: flex;
@@ -892,7 +898,7 @@ a[href^="tel:"] strong {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .program-icon-box {
@@ -916,8 +922,8 @@ a[href^="tel:"] strong {
 .program-desc {
   font-size: 0.95rem;
   color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 20px;
+  line-height: 1.6;
+  margin-bottom: 14px;
 }
 
 /* Pillar bullet points inside program cards */
@@ -926,8 +932,8 @@ a[href^="tel:"] strong {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: auto;
-  padding-top: 18px;
+  margin-top: 14px;
+  padding-top: 16px;
   border-top: 1px dashed var(--border-color);
 }
 
@@ -960,8 +966,8 @@ a[href^="tel:"] strong {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: auto;
-  padding-top: 18px;
+  margin-top: 14px;
+  padding-top: 16px;
   border-top: 1px dashed var(--border-color);
 }
 

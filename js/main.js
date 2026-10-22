@@ -71,6 +71,7 @@ const translations = {
     programsSubtitle: "مناهج وبرامج تخصصية شاملة مصممة لتمكين أبنائنا معرفياً ومهنياً ورياضياً",
     
     progEarlyTitle: "برنامج التدخل المبكر",
+    progEarlyDesc: "تنمية وتأهيل المهارات الأساسية والاستقلالية المبكرة :",
     progEarlyPill1Head: "مهارات الاعتماد على النفس:",
     progEarlyPill1Text: "التدريب على مهارات الاستقلالية اليومية (الحمام، تفريش الأسنان، الأكل، ارتداء الملابس).",
     progEarlyPill2Head: "النمو اللغوي والتواصلي والمعرفي:",
@@ -230,6 +231,7 @@ const translations = {
     programsSubtitle: "Comprehensive specialized curricula and programs designed to empower our children cognitively, vocationally, and athletically.",
     
     progEarlyTitle: "Early Intervention Program",
+    progEarlyDesc: "Developing foundational skills and early independence:",
     progEarlyPill1Head: "Self-Reliance Skills:",
     progEarlyPill1Text: "Training on daily independence skills (toilet training, tooth brushing, eating, dressing).",
     progEarlyPill2Head: "Linguistic, Communicative & Cognitive Growth:",
