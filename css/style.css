@@ -2148,7 +2148,7 @@ a[href^="tel:"] strong {
 }
 
 .photo-showcase-card {
-  max-width: 560px;
+  max-width: 628px;
   margin-inline: auto;
   border-radius: var(--radius-xl);
   overflow: hidden;
