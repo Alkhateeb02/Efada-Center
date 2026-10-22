@@ -2140,6 +2140,38 @@ a[href^="tel:"] strong {
 }
 
 /* ==========================================================================
+   Photo Showcase Section (Between Contact & Engagement)
+   ========================================================================== */
+.photo-showcase-section {
+  padding: 48px 0 24px;
+  background-color: var(--bg-surface);
+}
+
+.photo-showcase-card {
+  max-width: 560px;
+  margin-inline: auto;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 2px solid var(--border-color);
+  background: var(--bg-surface);
+  transition: var(--transition-smooth);
+}
+
+.photo-showcase-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--brand-green);
+}
+
+.photo-showcase-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ==========================================================================
    Engagement Section (Complaints, Suggestions & Community Partnerships)
    ========================================================================== */
 .engagement-section {
