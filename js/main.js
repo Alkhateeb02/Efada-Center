@@ -40,7 +40,7 @@ const translations = {
     badgeRatingSub: "من وزارة الموارد البشرية والتنمية الاجتماعية",
     badgeExpHighlight: "+١٣ عاماً",
     badgeExpSub: "في تعليم وتدريب ذوي متلازمة داون وأسرهم",
-    heroVideo3Tag: "طلابنا وطالباتنا بكم تكتمل فرحتنا، وبإنجازاتكم نفخر دائماً",
+    heroVideo3Tag: "بكم تكتمل فرحتنا، وبإنجازاتكم نفخر دائماً",
     
     // About Us
     aboutKicker: "من نحن",
@@ -204,7 +204,7 @@ const translations = {
     badgeRatingSub: "Ministry of Human Resources & Social Development",
     badgeExpHighlight: "13+ Years",
     badgeExpSub: "In educating & training individuals with Down Syndrome & their families",
-    heroVideo3Tag: "Our students, with you our joy is complete, and we are always proud of your achievements",
+    heroVideo3Tag: "With you our joy is complete, and we are always proud of your achievements",
     
     // About Us
     aboutKicker: "About Us",
