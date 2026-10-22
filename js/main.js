@@ -121,6 +121,7 @@ const translations = {
     platformDescP2: "تتيح المنصة الاطلاع على الأهداف التربوية الفردية لكل طالب، ومتابعة المهارات والأنشطة التعليمية (الواجبات - أوراق العمل - بطاقات التدريس)، وتقارير الإنجاز ومستوى التقدّم في تحقيق الأهداف.",
     platformDescP3: "منصة إفادة التعليمية شراكة مستمرة بين المركز والأسرة لدعم تطور أبنائنا وبناتنا.",
     platformBtn: "تحميل منصة إفادة التعليمية ↗",
+    platformWebBtn: "الدخول للمنصة عبر المتصفح ↗",
     
     // Contact & Registration Section
     contactKicker: "القبول والتسجيل",
@@ -141,15 +142,22 @@ const translations = {
     branchMaleTitle: "فرع البنين",
     branchMaleAge: "من 12 سنة إلى 45 سنة",
     
-    // Engagement Section (Complaints & Partnerships)
-    engagementKicker: "التواصل والشراكات",
-    engagementTitle: "الشكاوى والمقترحات والشراكات المجتمعية",
+    // Engagement Section (Complaints, Partnerships & Careers)
+    engagementKicker: "التواصل والشراكات والتوظيف",
+    engagementTitle: "الشكاوى، الشراكات المجتمعية وفرص الانضمام",
     complaintsCardTitle: "للشكاوى والاقتراحات",
-    complaintsWhatsappLabel: "لرفع الشكوى / الاقتراح عبر رسالة نصية على الواتساب:",
-    complaintsEmailLabel: "لرفع الشكوى / الاقتراح عبر الإيميل:",
+    complaintsWhatsappLabel: "لرفع الشكوى / الاقتراح للرئيس التنفيذي عبر رسالة نصية على الواتساب:",
+    complaintsEmailLabel: "لرفع الشكوى / الاقتراح للرئيس التنفيذي عبر الإيميل:",
+    complaintsFemaleFormLabel: "لرفع شكوى تخص فرع البنات وفق البنود بالرابط التالي:",
+    complaintsFemaleFormBtn: "نموذج شكاوى فرع البنات ↗",
+    complaintsMaleFormLabel: "لرفع شكوى تخص فرع البنين وفق البنود بالرابط التالي:",
+    complaintsMaleFormBtn: "نموذج شكاوى فرع البنين ↗",
     partnershipsCardTitle: "للتعاون والشراكات المجتمعية والمبادرات",
     partnershipsWhatsappLabel: "رقم الواتساب:",
     partnershipsEmailLabel: "البريد الإلكتروني:",
+    careersCardTitle: "انضم إلى كادر مركز إفادة للرعاية النهارية",
+    careersBranchesTag: "(فرع البنات) - (فرع البنين)",
+    careersEmailPrompt: "بإرسال السيرة الذاتية والمؤهلات على البريد الإلكتروني التالي:",
     
     // Footer
     footerCopy: "مركز إفادة للرعاية النهارية. جميع الحقوق محفوظة.",
@@ -272,6 +280,7 @@ const translations = {
     platformDescP2: "The platform provides access to individualized educational goals for each student, tracking learning skills and activities (homework, worksheets, instructional cards), and reviewing progress reports toward achieving individual milestones.",
     platformDescP3: "Efada Educational Platform: An ongoing partnership between the Center and families to support the growth of our children.",
     platformBtn: "Download Efada Educational Platform ↗",
+    platformWebBtn: "Platform Browser Access ↗",
     
     // Contact & Registration Section
     contactKicker: "Admissions & Registration",
@@ -292,15 +301,22 @@ const translations = {
     branchMaleTitle: "Boys' Branch",
     branchMaleAge: "From 12 to 45 Years",
     
-    // Engagement Section (Complaints & Partnerships)
-    engagementKicker: "Contact & Partnerships",
-    engagementTitle: "Complaints, Suggestions & Community Partnerships",
+    // Engagement Section (Complaints, Partnerships & Careers)
+    engagementKicker: "Contact, Partnerships & Careers",
+    engagementTitle: "Complaints, Community Partnerships & Careers",
     complaintsCardTitle: "Complaints & Suggestions",
-    complaintsWhatsappLabel: "Submit complaint / suggestion via WhatsApp message:",
-    complaintsEmailLabel: "Submit complaint / suggestion via Email:",
+    complaintsWhatsappLabel: "Submit complaint / suggestion to CEO via WhatsApp text:",
+    complaintsEmailLabel: "Submit complaint / suggestion to CEO via Email:",
+    complaintsFemaleFormLabel: "Submit a complaint for Girls' Branch according to clauses via link:",
+    complaintsFemaleFormBtn: "Girls' Branch Complaint Form ↗",
+    complaintsMaleFormLabel: "Submit a complaint for Boys' Branch according to clauses via link:",
+    complaintsMaleFormBtn: "Boys' Branch Complaint Form ↗",
     partnershipsCardTitle: "Community Cooperation, Partnerships & Initiatives",
     partnershipsWhatsappLabel: "WhatsApp Number:",
     partnershipsEmailLabel: "Email Address:",
+    careersCardTitle: "Join Efada Day Care Center Team",
+    careersBranchesTag: "(Girls' Branch) - (Boys' Branch)",
+    careersEmailPrompt: "Send CV and qualifications to the following emails:",
     
     // Footer
     footerCopy: "Efada Day Care Center. All Rights Reserved.",
