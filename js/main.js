@@ -27,7 +27,7 @@ const translations = {
     // Hero
     heroPill: "ترخيص رقم ٢٠٤ - وزارة الموارد البشرية والتنمية الاجتماعية",
     heroSlogan: "أنا لمجتمعي إفادة",
-    heroHook: "تعرف مين أنا ؟ تعرف مركز إفادة للرعاية النهارية ؟",
+    heroHook: "تعرف مين أنا ؟ تعرف مركز إفادة ؟",
     requestConsultation: "طلب تقييم شامل",
     explorePrograms: "استكشف البرامج والخدمات",
     statGoalMastery: "نسبة تحقيق الأهداف الفردية",
@@ -191,7 +191,7 @@ const translations = {
     // Hero
     heroPill: "License No. 204 - Ministry of Human Resources and Social Development",
     heroSlogan: "For my community, I am Efada",
-    heroHook: "Do you know who I am? Do you know Efada Day Care Center?",
+    heroHook: "Do you know who I am? Do you know Efada Center?",
     requestConsultation: "Request Comprehensive Evaluation",
     explorePrograms: "Explore Programs & Services",
     statGoalMastery: "Individualized Goal Mastery",
