@@ -157,8 +157,12 @@ const translations = {
     partnershipsWhatsappLabel: "رقم الواتساب:",
     partnershipsEmailLabel: "البريد الإلكتروني:",
     careersCardTitle: "انضم إلى كادر مركز إفادة للرعاية النهارية",
-    careersBranchesTag: "(فرع البنات) - (فرع البنين)",
-    careersEmailPrompt: "بإرسال السيرة الذاتية والمؤهلات على البريد الإلكتروني التالي:",
+    careersGirlsPrompt: "- (فرع البنات) بإرسال السيرة الذاتية والمؤهلات على البريد الإلكتروني التالي:",
+    careersBoysPrompt: "- (فرع البنين) بإرسال السيرة الذاتية والمؤهلات على البريد الإلكتروني التالي:",
+    
+    // Final Standalone Video Section (Efada Video 4 - آخر شي)
+    finalVideoKicker: "مشاهد من مركز إفادة",
+    finalVideoTitle: "إلى نجومنا، أنتم أجمل حكايات هذا العام، بكم يكتمل الإنجاز",
     
     // Footer
     footerCopy: "مركز إفادة للرعاية النهارية. جميع الحقوق محفوظة.",
@@ -317,8 +321,12 @@ const translations = {
     partnershipsWhatsappLabel: "WhatsApp Number:",
     partnershipsEmailLabel: "Email Address:",
     careersCardTitle: "Join Efada Day Care Center Team",
-    careersBranchesTag: "(Girls' Branch) - (Boys' Branch)",
-    careersEmailPrompt: "Send CV and qualifications to the following emails:",
+    careersGirlsPrompt: "- (Girls' Branch) Send CV and qualifications to the following email:",
+    careersBoysPrompt: "- (Boys' Branch) Send CV and qualifications to the following email:",
+    
+    // Final Standalone Video Section (Efada Video 4 - آخر شي)
+    finalVideoKicker: "Center Highlights",
+    finalVideoTitle: "To our stars, you are this year's most beautiful stories, with you the achievement is complete",
     
     // Footer
     footerCopy: "Efada Day Care Center. All Rights Reserved.",

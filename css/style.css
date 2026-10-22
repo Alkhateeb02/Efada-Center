@@ -2320,6 +2320,56 @@ a[href^="tel:"] strong {
 }
 
 /* ==========================================================================
+   Final Standalone Video Showcase Section (Efada Video 4 - آخر شي)
+   ========================================================================== */
+.final-video-section {
+  background-color: var(--bg-surface);
+  padding: 64px 0 84px;
+  border-top: 1px solid var(--border-color);
+}
+
+.final-video-card {
+  max-width: 920px;
+  margin-inline: auto;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-smooth);
+}
+
+.final-video-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--brand-green);
+}
+
+.final-video-header {
+  padding: 30px 28px 18px;
+  text-align: center;
+}
+
+.final-video-title {
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  font-weight: 800;
+  color: var(--text-main);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.final-video-frame {
+  width: 100%;
+  background: #000000;
+  overflow: hidden;
+}
+
+.final-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+
+/* ==========================================================================
    Responsive Adaptations
    ========================================================================== */
 
