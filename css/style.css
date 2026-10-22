@@ -1778,51 +1778,6 @@ a[href^="tel:"] strong {
   color: #ffffff;
 }
 
-.footer-support-col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-tech-support-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 18px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: var(--radius-pill);
-  transition: var(--transition-smooth);
-}
-
-.footer-tech-support-badge:hover {
-  background: rgba(47, 140, 92, 0.2);
-  border-color: rgba(47, 140, 92, 0.5);
-  transform: translateY(-2px);
-}
-
-.footer-tech-support-badge .support-icon {
-  font-size: 1.15rem;
-}
-
-.footer-tech-support-badge .support-label {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #d1fae5;
-}
-
-.footer-tech-support-badge .support-phone-link {
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: var(--transition-smooth);
-}
-
-.footer-tech-support-badge .support-phone-link:hover {
-  color: #6ee7b7;
-  text-decoration: underline;
-}
 
 .footer-copy-col {
   text-align: end;
@@ -1963,6 +1918,47 @@ a[href^="tel:"] strong {
 
 [data-theme="dark"] .badge-in-progress {
   color: #ff6b6b;
+}
+
+/* Sports Program: Special Olympics Club Yellow Shield Logo */
+.program-club-logo-box {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: rgba(245, 191, 66, 0.12);
+  border: 1px solid rgba(245, 191, 66, 0.35);
+  border-radius: var(--radius-md);
+  padding: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.sport-program-card:hover .program-club-logo-box {
+  transform: translateY(-2px) scale(1.06);
+  border-color: var(--brand-yellow);
+  box-shadow: 0 6px 18px rgba(245, 191, 66, 0.3);
+}
+
+.club-logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
+}
+
+.sport-club-tag {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #b37806;
+  margin-top: 3px;
+  letter-spacing: 0.2px;
+}
+
+[data-theme="dark"] .sport-club-tag {
+  color: #ffd269;
 }
 
 /* Sports Program Video Wrap */

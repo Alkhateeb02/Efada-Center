@@ -95,6 +95,7 @@ const translations = {
     progVocPill3Text: "",
     
     progSportTitle: "البرنامج الرياضي",
+    sportClubTag: "نادي إفادة الأولمبياد الخاص السعودي",
     progSportDesc: "نادي إفادة للأولمبياد الخاص للتأهيل للبطولات المحلية والدولية بالتعاون مع وزارة الرياضة ممثلة بالاتحاد السعودي للرياضة الجامعية وبالشراكة مع جامعة الأميرة نورة بنت عبدالرحمن",
     
     // Support Services Section
@@ -134,7 +135,6 @@ const translations = {
     
     // Footer
     footerCopy: "مركز إفادة للرعاية النهارية. جميع الحقوق محفوظة.",
-    footerTechSupport: "قسم الدعم الفني:",
     footerLicense: "ترخيص رقم ٢٠٤ - وزارة الموارد البشرية والتنمية الاجتماعية"
   },
   
@@ -228,6 +228,7 @@ const translations = {
     progVocPill3Text: "",
     
     progSportTitle: "Athletic Program",
+    sportClubTag: "Efada Saudi Special Olympics Club",
     progSportDesc: "Efada Special Olympics Club for preparing for local and international championships in cooperation with the Ministry of Sport represented by the Saudi Universities Sports Federation and in partnership with Princess Nourah bint Abdulrahman University.",
     
     // Support Services Section
@@ -267,7 +268,6 @@ const translations = {
     
     // Footer
     footerCopy: "Efada Day Care Center. All Rights Reserved.",
-    footerTechSupport: "Technical Support:",
     footerLicense: "License No. 204 - Ministry of Human Resources and Social Development"
   }
 };
