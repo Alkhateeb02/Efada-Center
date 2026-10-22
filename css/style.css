@@ -2088,51 +2088,164 @@ a[href^="tel:"] strong {
   letter-spacing: 0.3px;
 }
 
-/* Final Standalone Video Showcase Section */
-.final-video-section {
-  background-color: var(--bg-subtle);
-  padding: 80px 0 96px;
+/* Branch Opening Dates List */
+.branch-dates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
 }
 
-.final-video-card {
-  max-width: 960px;
-  margin-inline: auto;
+/* Program Card Video Caption */
+.program-video-caption {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-main);
+  display: block;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+/* Platform Detailed Description */
+.platform-desc-wrap {
+  margin: 18px 0 24px;
+}
+
+.platform-desc-p {
+  color: var(--text-muted);
+  font-size: 0.975rem;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.platform-desc-highlight {
+  font-weight: 700;
+  color: var(--brand-green);
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Engagement Section (Complaints, Suggestions & Community Partnerships)
+   ========================================================================== */
+.engagement-section {
+  background-color: var(--bg-subtle);
+  padding: 72px 0 88px;
+  border-top: 1px solid var(--border-color);
+}
+
+.engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  margin-top: 36px;
+}
+
+.engagement-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-md);
   transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
 }
 
-.final-video-card:hover {
-  box-shadow: 0 20px 45px rgba(20, 34, 27, 0.12);
+.engagement-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
   border-color: var(--brand-green);
 }
 
-.final-video-header {
-  padding: 34px 36px 20px;
-  text-align: center;
+.complaints-card:hover {
+  border-color: var(--brand-red);
 }
 
-.final-video-title {
-  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+.engagement-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.engagement-icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.engagement-card-header h3 {
+  font-size: 1.15rem;
   font-weight: 800;
   color: var(--text-main);
-  margin-top: 6px;
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
-.final-video-frame {
-  width: 100%;
-  background: #000000;
-  overflow: hidden;
+.engagement-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-.final-video {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  display: block;
+.engagement-link-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.engagement-item-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.engagement-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: var(--radius-md);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+  width: fit-content;
+}
+
+.engagement-contact-btn:hover {
+  transform: translateX(-4px);
+  background: var(--bg-surface);
+}
+
+[dir="ltr"] .engagement-contact-btn:hover {
+  transform: translateX(4px);
+}
+
+.whatsapp-btn:hover {
+  color: #128c7e;
+  border-color: #25d366;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.15);
+}
+
+.email-btn:hover {
+  color: var(--brand-blue);
+  border-color: var(--brand-blue);
+  box-shadow: 0 4px 12px rgba(18, 97, 160, 0.15);
+}
+
+.engagement-contact-btn .btn-icon {
+  font-size: 1.15rem;
 }
 
 /* ==========================================================================
@@ -2265,12 +2378,44 @@ a[href^="tel:"] strong {
     gap: 8px;
   }
 
-  .final-video-section {
-    padding: 50px 0 64px;
+  .engagement-section {
+    padding: 48px 0 60px;
   }
 
-  .final-video-header {
-    padding: 24px 18px 16px;
+  .engagement-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .engagement-card {
+    padding: 24px 20px;
+  }
+
+  .engagement-contact-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-metrics-strip {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .brand-logo-img {
+    height: 40px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-text strong {
+    font-size: 1rem;
+  }
+
+  .brand-text small {
+    font-size: 0.7rem;
   }
 }
 

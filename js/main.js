@@ -15,7 +15,8 @@ const translations = {
     
     // Brand Header
     brand: "مركز إفادة للرعاية النهارية",
-    brandSub: "(متلازمة داون)",
+    brandTitle: "مركز إفادة",
+    brandSub: "للرعاية النهارية (متلازمة داون)",
     navAbout: "من نحن",
     navPrograms: "برامج المركز",
     navServices: "الخدمات المساندة",
@@ -31,6 +32,7 @@ const translations = {
     explorePrograms: "استكشف البرامج والخدمات",
     statGoalMastery: "نسبة تحقيق الأهداف الفردية",
     statChildrenSupported: "طفل تم تمكينهم ودمجهم",
+    statSpecialistsTrained: "أخصائي وأخصائية تم تدريبهم تدريب تخصصي",
     
     // Hero Showcase Card
     emblemTitle: "مركز إفادة للرعاية النهارية",
@@ -38,6 +40,7 @@ const translations = {
     badgeRatingSub: "من وزارة الموارد البشرية والتنمية الاجتماعية",
     badgeExpHighlight: "+١٣ عاماً",
     badgeExpSub: "في تعليم وتدريب ذوي متلازمة داون وأسرهم",
+    heroVideo3Tag: "طلابنا وطالباتنا بكم تكتمل فرحتنا، وبإنجازاتكم نفخر دائماً",
     
     // About Us
     aboutKicker: "من نحن",
@@ -54,11 +57,13 @@ const translations = {
     aboutGoal5: "تطوير المواد والبرامج التدريبية والعلمية لتأهيل المدربين والمدرسين مهنياً في مجال متلازمة داون والقصور العقلي.",
     founderTag: "المدير التنفيذي",
     founderName: "أخصائية التربية الخاصة ديمة عبدالله الطويل",
-    founderBio: "خبرة ممتدة + ٢٠ عاماً في مجال تدريب وتأهيل ذوي متلازمة داون وأسرهم ،، مؤسسة عدة مبادرات منها : مبادرة أنا أقدر . مبادرة أنا لمجتمعي إفادة . مبادرة علاج طفل مقيم . مبادرة التدريب المنتهي بالتوظيف . مبادرة تفعيل العيادات الخارجية لتعليم الطلاب ذوي الدخل المحدود . مبادرة تصميم مناهج وبرامج تخصصية لذوي متلازمة داون . مبادرة تدريب الكوادر على برامج تخصصية للجلسات الفردية، إدارة المجموعة وتعديل السلوك.",
+    founderBio: "خبرة ممتدة + ٢٠ عاماً في مجال تدريب وتأهيل ذوي متلازمة داون وأسرهم ،، مؤسسة عدة مبادرات منها : مبادرة أنا أقدر . مبادرة أنا لمجتمعي إفادة . مبادرة علاج طفل مقيم . مبادرة التدريب المنتهي بالتوظيف . مبادرة تفعيل العيادات الخارجية لتعليم الطلاب ذوي الدخل المحدود . مبادرة تصميم مناهج وبرامج تخصصية لذوي متلازمة داون . مبادرة تدريب الكوادر على برامج تخصصية للجلسات الفردية، إدارة المجموعة وتعديل السلوك . مبادرة دمج الطلاب من خلال شراكات بمختلف المجالات منها : الرياضية والمهنية.",
     licenseLabel: "الترخيص الرسمي للمركز",
     licenseVal: "ترخيص رقم ٢٠٤ - وزارة الموارد البشرية والتنمية الاجتماعية",
     sinceLabel: "تاريخ افتتاح فروع المركز",
-    sinceVal: "فرع البنات: ٢٠١٣م - فرع البنين: ٢٠٢٣م",
+    sinceGirls: "فرع البنات: 05/11/2013م",
+    sinceBoys: "فرع البنين: 27/07/2023م",
+    stagePhotoCaption: "لحظات مليئة بالثقة والإبداع ، أثبتوا فيها أن لكل موهبة نوراً يستحق أن يسطع. نجومنا الصغار .. بكم يزهو المسرح وبإبداعكم نفخر",
     
     // Core Educational & Developmental Programs Section
     programsKicker: "برامج المركز",
@@ -93,6 +98,7 @@ const translations = {
     progVocPill2Text: "التدريب في الوحدات التدريبية داخل وخارج المركز.",
     progVocPill3Head: "تدريب منتهي بالتوظيف",
     progVocPill3Text: "",
+    progVocVideoTitle: "إلى نجومنا، أنتم أجمل حكايات هذا العام، بكم يكتمل الإنجاز",
     
     progSportTitle: "البرنامج الرياضي",
     sportClubTag: "نادي إفادة الأولمبياد الخاص السعودي",
@@ -111,7 +117,9 @@ const translations = {
     // Educational Platform Section
     platformKicker: "المنصة الرقمية",
     platformHeading: "منصة إفادة التعليمية",
-    platformDesc: "منظومة إلكترونية متخصصة لمتابعة الخطط الفردية، وتطوير المهارات التعليمية والتأهيلية لذوي متلازمة داون وأسرهم بكل سهولة.",
+    platformDescP1: "حرصًا من مركز إفادة على تطوير العملية التعليمية وتعزيز التواصل مع أولياء الأمور، يسعدنا أن نعرّفكم بمنصتنا التعليمية، والتي تهدف إلى متابعة رحلة الطالب التعليمية وتقدّمه بشكل مستمر.",
+    platformDescP2: "تتيح المنصة الاطلاع على الأهداف التربوية الفردية لكل طالب، ومتابعة المهارات والأنشطة التعليمية (الواجبات - أوراق العمل - بطاقات التدريس)، وتقارير الإنجاز ومستوى التقدّم في تحقيق الأهداف.",
+    platformDescP3: "منصة إفادة التعليمية شراكة مستمرة بين المركز والأسرة لدعم تطور أبنائنا وبناتنا.",
     platformBtn: "تحميل منصة إفادة التعليمية ↗",
     
     // Contact & Registration Section
@@ -133,9 +141,15 @@ const translations = {
     branchMaleTitle: "فرع البنين",
     branchMaleAge: "من 12 سنة إلى 45 سنة",
     
-    // Final Standalone Video Section
-    finalVideoKicker: "مشاهد من مركز إفادة",
-    finalVideoTitle: "لحظات ملهمة وإنجازات متواصلة في مركز إفادة للرعاية النهارية",
+    // Engagement Section (Complaints & Partnerships)
+    engagementKicker: "التواصل والشراكات",
+    engagementTitle: "الشكاوى والمقترحات والشراكات المجتمعية",
+    complaintsCardTitle: "للشكاوى والاقتراحات",
+    complaintsWhatsappLabel: "لرفع الشكوى / الاقتراح عبر رسالة نصية على الواتساب:",
+    complaintsEmailLabel: "لرفع الشكوى / الاقتراح عبر الإيميل:",
+    partnershipsCardTitle: "للتعاون والشراكات المجتمعية والمبادرات",
+    partnershipsWhatsappLabel: "رقم الواتساب:",
+    partnershipsEmailLabel: "البريد الإلكتروني:",
     
     // Footer
     footerCopy: "مركز إفادة للرعاية النهارية. جميع الحقوق محفوظة.",
@@ -152,7 +166,8 @@ const translations = {
     
     // Brand Header
     brand: "Efada Day Care Center",
-    brandSub: "(Down Syndrome)",
+    brandTitle: "Efada Center",
+    brandSub: "Day Care (Down Syndrome)",
     navAbout: "About Us",
     navPrograms: "Center Programs",
     navServices: "Support Services",
@@ -168,6 +183,7 @@ const translations = {
     explorePrograms: "Explore Programs & Services",
     statGoalMastery: "Individualized Goal Mastery",
     statChildrenSupported: "Children Empowered & Integrated",
+    statSpecialistsTrained: "Specialists Professionally Trained",
     
     // Hero Showcase Card
     emblemTitle: "Efada Day Care Center",
@@ -175,6 +191,7 @@ const translations = {
     badgeRatingSub: "Ministry of Human Resources & Social Development",
     badgeExpHighlight: "13+ Years",
     badgeExpSub: "In educating & training individuals with Down Syndrome & their families",
+    heroVideo3Tag: "Our students, with you our joy is complete, and we are always proud of your achievements",
     
     // About Us
     aboutKicker: "About Us",
@@ -191,11 +208,13 @@ const translations = {
     aboutGoal5: "Developing training and scientific materials to qualify coaches and teachers in Down Syndrome and developmental support.",
     founderTag: "Executive Director",
     founderName: "Special Education Specialist: Dema Abdullah Al-Tawil",
-    founderBio: "Over 20+ years of extended expertise in training and rehabilitating individuals with Down syndrome and their families. Founder of several initiatives including: 'I Can', 'For My Community I am Efada', 'Resident Child Treatment', 'Training Leading to Employment', activating outpatient clinics for low-income students, designing specialized curricula for Down syndrome, and training specialists on individualized sessions, group management, and behavior modification.",
+    founderBio: "Over 20+ years of extended expertise in training and rehabilitating individuals with Down syndrome and their families. Founder of several initiatives including: 'I Can', 'For My Community I am Efada', 'Resident Child Treatment', 'Training Leading to Employment', activating outpatient clinics for low-income students, designing specialized curricula for Down syndrome, training specialists on individualized sessions, group management, and behavior modification, and student inclusion through multi-field partnerships (athletic and vocational).",
     licenseLabel: "Official Center License",
     licenseVal: "License No. 204 - Ministry of Human Resources and Social Development",
     sinceLabel: "Center Branches Opening Dates",
-    sinceVal: "Girls' Branch: 2013 - Boys' Branch: 2023",
+    sinceGirls: "Girls' Branch: 05/11/2013",
+    sinceBoys: "Boys' Branch: 27/07/2023",
+    stagePhotoCaption: "Moments full of confidence and creativity, proving that every talent has a light worthy of shining. Our young stars... with you the stage flourishes, and we are always proud of your brilliance.",
     
     // Core Educational & Developmental Programs Section
     programsKicker: "Center Programs",
@@ -230,6 +249,7 @@ const translations = {
     progVocPill2Text: "Training in specialized units inside and outside the center.",
     progVocPill3Head: "Training Leading to Employment",
     progVocPill3Text: "",
+    progVocVideoTitle: "To our stars, you are this year's most beautiful stories, with you the achievement is complete",
     
     progSportTitle: "Athletic Program",
     sportClubTag: "Efada Saudi Special Olympics Club",
@@ -248,7 +268,9 @@ const translations = {
     // Educational Platform Section
     platformKicker: "Digital Platform",
     platformHeading: "Efada Educational Platform",
-    platformDesc: "A specialized digital system to follow individual plans and develop educational and rehabilitative skills for individuals with Down syndrome and their families.",
+    platformDescP1: "Out of Efada Center's commitment to advancing the educational process and enhancing continuous communication with parents, we are pleased to present our educational platform designed to track the student's learning journey and progress on an ongoing basis.",
+    platformDescP2: "The platform provides access to individualized educational goals for each student, tracking learning skills and activities (homework, worksheets, instructional cards), and reviewing progress reports toward achieving individual milestones.",
+    platformDescP3: "Efada Educational Platform: An ongoing partnership between the Center and families to support the growth of our children.",
     platformBtn: "Download Efada Educational Platform ↗",
     
     // Contact & Registration Section
@@ -270,9 +292,15 @@ const translations = {
     branchMaleTitle: "Boys' Branch",
     branchMaleAge: "From 12 to 45 Years",
     
-    // Final Standalone Video Section
-    finalVideoKicker: "Center Highlights",
-    finalVideoTitle: "Inspiring Moments & Continuous Milestones at Efada Day Care Center",
+    // Engagement Section (Complaints & Partnerships)
+    engagementKicker: "Contact & Partnerships",
+    engagementTitle: "Complaints, Suggestions & Community Partnerships",
+    complaintsCardTitle: "Complaints & Suggestions",
+    complaintsWhatsappLabel: "Submit complaint / suggestion via WhatsApp message:",
+    complaintsEmailLabel: "Submit complaint / suggestion via Email:",
+    partnershipsCardTitle: "Community Cooperation, Partnerships & Initiatives",
+    partnershipsWhatsappLabel: "WhatsApp Number:",
+    partnershipsEmailLabel: "Email Address:",
     
     // Footer
     footerCopy: "Efada Day Care Center. All Rights Reserved.",
