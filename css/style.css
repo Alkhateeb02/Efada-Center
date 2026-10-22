@@ -1509,11 +1509,53 @@ a[href^="tel:"] strong {
   line-height: 1.35;
 }
 
-.founder-bio {
+.founder-bio,
+.founder-bio-lead {
   font-size: 0.95rem;
-  color: var(--text-muted);
+  color: var(--text-main);
+  font-weight: 700;
   line-height: 1.65;
-  margin-bottom: 22px;
+  margin-bottom: 12px;
+}
+
+.founder-initiatives-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.founder-initiative-item {
+  position: relative;
+  padding-inline-start: 22px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  transition: var(--transition-smooth);
+}
+
+.founder-initiative-item::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 4px;
+  top: 9px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--brand-green);
+  box-shadow: 0 0 0 3px rgba(47, 140, 92, 0.18);
+}
+
+.founder-initiative-item:hover {
+  color: var(--text-main);
+  transform: translateX(-3px);
+}
+
+[data-theme="dark"] .founder-initiative-item::before {
+  background-color: #4ade80;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.22);
 }
 
 .founder-meta-strip {
