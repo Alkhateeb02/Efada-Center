@@ -2746,9 +2746,9 @@ a[href^="tel:"] strong {
 }
 
 .clinic-media-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
   margin-top: 14px;
 }
 
@@ -2773,10 +2773,10 @@ a[href^="tel:"] strong {
 
 .clinic-img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
-  min-height: 130px;
 }
 
 /* 4. How We Learn Subsection */
@@ -3544,4 +3544,25 @@ a[href^="tel:"] strong {
   .responsive-video.video-portrait {
     max-height: 480px;
   }
+}
+
+
+/* Saudi Flag SVG Icon */
+.saudi-flag-icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 0.85em;
+  width: auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22);
+  margin-inline-start: 10px;
+}
+
+
+.clinic-video-box.frame-portrait {
+  background: var(--bg-subtle) !important;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

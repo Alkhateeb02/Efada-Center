@@ -230,7 +230,7 @@ const translations = {
 
     // National Pride Section
     nationalKicker: "فخر وانتماء",
-    nationalTitle: "وطني .. عزّنا وانتماؤنا 🇸🇦",
+    nationalTitle: 'وطني .. عزّنا وانتماؤنا <img src="assets/saudi-flag.svg" alt="علم المملكة العربية السعودية" class="saudi-flag-icon">',
     nationalSubtitle: "في وطننا ننتمي، وبقيمه نعتز، وبإنجازاته نفخر، وعلى أرضه نحلم ونتعلم ونبدع",
     nationalVid1Caption: "المملكة العربية السعودية هي وطن يسكن القلوب، وتاريخ نفخر به، وهوية نعتز بها، ومستقبل نشارك جميعًا في صناعته.",
     nationalVid2Caption: "في وطننا ننتمي، وبقيمه نعتز، وبإنجازاته نفخر، وعلى أرضه نحلم ونتعلم ونبدع، فاللهم احفظ لنا مملكتنا",
@@ -495,7 +495,7 @@ const translations = {
 
     // National Pride Section
     nationalKicker: "Pride & Belonging",
-    nationalTitle: "My Homeland .. Our Pride and Belonging 🇸🇦",
+    nationalTitle: 'My Homeland .. Our Pride and Belonging <img src="assets/saudi-flag.svg" alt="Flag of Saudi Arabia" class="saudi-flag-icon">',
     nationalSubtitle: "In our homeland we belong, in its values we cherish, in its achievements we take pride, and upon its soil we dream, learn, and innovate.",
     nationalVid1Caption: "The Kingdom of Saudi Arabia is a homeland residing in our hearts, a history we take pride in, an identity we cherish, and a future we all help build.",
     nationalVid2Caption: "In our homeland we belong, in its values we cherish, in its achievements we take pride, and upon its soil we dream, learn, and innovate. May God protect our Kingdom.",
