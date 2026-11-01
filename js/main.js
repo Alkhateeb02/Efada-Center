@@ -244,12 +244,12 @@ const translations = {
     careersTribute: "كادر التربية الخاصة هم الذين يرون الإمكانات حين قد لا يراها الآخرون، ويحتفون بالخطوات الصغيرة وكأنها انتصارات عظيمة، ويمنحون طلابهم من وقتهم وقلوبهم وجهدهم، إيمانًا بأن لكل طالب قدرة، ولكل إنجاز قيمة، ولكل إنسان حقًا في أن يتعلم ويُقدَّر ويُحتفى به.<br><br><strong>فخورون بكم.. يا من جعلتم من مهنتكم رسالة، ومن عطائكم أثرًا، ومن طلابكم حكايات نجاح تستحق أن تُروى</strong>",
 
     // Annual Closing Ceremony
-    ceremonyKicker: "حصاد الإبداع السنوي",
+    ceremonyKicker: "الحصاد السنوي",
     ceremonyTitle: "الحفل الختامي السنوي",
     ceremonySubtitle: "لحظات مليئة بالثقة والإبداع ، أثبتوا فيها أن لكل موهبة نوراً يستحق أن يسطع. نجومنا الصغار .. بكم يزهو المسرح وبإبداعكم نفخر",
-    ceremonyVid1Tag: "العرض المسرحي واللوحات الإبداعية لنجومنا الصغار",
-    ceremonyVid2Tag: "فقرات التكريم وتتويج إنجازات الطلاب السنوية",
-    ceremonyVid3Tag: "فرحة النجاح والتخرج والاحتفاء مع الأهالي والكوادر",
+    ceremonyVid1Tag: "خدام الحرم",
+    ceremonyVid2Tag: "من يعطي الطفل الإفادة",
+    ceremonyVid3Tag: "نادي إفادة للأولمبياد الخاص",
 
     // Summer Program
     summerKicker: "صيف مميز ومثمر",
@@ -509,12 +509,12 @@ const translations = {
     careersTribute: "Special education staff are those who perceive potential when others might not, celebrating small steps as grand victories, giving their time, hearts, and energy, with firm belief that every student possesses ability, every achievement holds worth, and every person deserves to learn, be valued, and celebrated.<br><br><strong>We are proud of you.. you who turned your profession into a mission, your giving into enduring impact, and your students into success stories worthy of being told.</strong>",
 
     // Annual Closing Ceremony
-    ceremonyKicker: "Annual Milestone",
+    ceremonyKicker: "Annual Harvest",
     ceremonyTitle: "Annual Closing Ceremony",
     ceremonySubtitle: "Moments filled with confidence and creativity, proving every talent has a light deserving to shine. Our young stars .. the stage flourishes with you and we take pride in your creativity.",
-    ceremonyVid1Tag: "Theatrical & Creative Performances by Our Young Stars",
-    ceremonyVid2Tag: "Honoring Student Milestones and Annual Achievements",
-    ceremonyVid3Tag: "Celebration of Graduation and Success with Families",
+    ceremonyVid1Tag: "Servants of the Two Holy Mosques",
+    ceremonyVid2Tag: "Who Gives the Child the Benefit",
+    ceremonyVid3Tag: "Efada Special Olympics Club",
 
     // Summer Program
     summerKicker: "Enriching Summer Experience",
@@ -660,6 +660,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 3. Smooth scrolling
   setupSmoothScrolling();
   setupEmailModalHandler();
+  adaptPortraitVideos();
 
   // 4. Update footer year
   const yearEl = document.getElementById("year");
@@ -813,5 +814,48 @@ function setupEmailModalHandler() {
         openEmailModal(email);
       }
     });
+  });
+}
+
+
+/**
+ * Automatically detect vertical/portrait videos (9:16 aspect ratio)
+ * and eliminate black bars dynamically across all screens.
+ */
+function adaptPortraitVideos() {
+  const frames = [
+    ".program-video-frame",
+    ".clinic-video-box",
+    ".story-video-frame",
+    ".national-video-frame",
+    ".ceremony-video-frame",
+    ".summer-video-frame",
+    ".hero-video-frame",
+    ".final-video-frame",
+    ".inline-video-frame",
+    ".director-video-frame",
+    ".learn-video-frame",
+    ".careers-video-box",
+    ".engagement-video-box"
+  ].join(", ");
+
+  document.querySelectorAll("video").forEach((vid) => {
+    function checkOrientation() {
+      if (vid.videoWidth && vid.videoHeight) {
+        if (vid.videoHeight > vid.videoWidth) {
+          vid.classList.add("video-portrait");
+          const parentFrame = vid.closest(frames);
+          if (parentFrame) {
+            parentFrame.classList.add("frame-portrait");
+          }
+        }
+      }
+    }
+
+    if (vid.readyState >= 1) {
+      checkOrientation();
+    } else {
+      vid.addEventListener("loadedmetadata", checkOrientation);
+    }
   });
 }

@@ -3499,3 +3499,49 @@ a[href^="tel:"] strong {
     transform: translateY(0);
   }
 }
+
+
+/* ==========================================================================
+   Portrait (9:16) Video Handling - Zero Black Bars
+   ========================================================================== */
+.responsive-video.video-portrait {
+  aspect-ratio: 9 / 16 !important;
+  max-height: 540px;
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  display: block;
+  object-fit: contain;
+  background-color: transparent !important;
+}
+
+.frame-portrait {
+  background: transparent !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  overflow: hidden;
+}
+
+.national-card.portrait-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.national-card.portrait-card .frame-portrait {
+  background: var(--bg-subtle) !important;
+  padding: 12px 0;
+}
+
+.careers-video-box.frame-portrait {
+  background: var(--bg-subtle) !important;
+  padding: 12px 0;
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 768px) {
+  .responsive-video.video-portrait {
+    max-height: 480px;
+  }
+}
