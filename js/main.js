@@ -30,9 +30,12 @@ const translations = {
     heroHook: "تعرف مين أنا ؟ تعرف مركز إفادة ؟",
     requestConsultation: "طلب تقييم شامل",
     explorePrograms: "استكشف البرامج والخدمات",
+    statGoalMasteryNum: "95%",
     statGoalMastery: "نسبة تحقيق الأهداف الفردية",
-    statChildrenSupported: "طفل تم تمكينهم ودمجهم",
-    statSpecialistsTrained: "أخصائي وأخصائية تم تدريبهم تدريب تخصصي",
+    statChildrenNum: "+1000",
+    statChildrenSupported: "طفل وطفلة تم تمكينهم ودمجهم مجتمعياً",
+    statSpecialistsNum: "+800",
+    statSpecialistsTrained: "أخصائية وأخصائي تم تدريبهم تدريب تخصصي",
     
     // Hero Showcase Card
     emblemTitle: "مركز إفادة للرعاية النهارية",
@@ -75,7 +78,7 @@ const translations = {
     
     // Core Educational & Developmental Programs Section
     programsKicker: "برامج المركز",
-    programsTitle: "البرامج المقدمة في مركز إفادة",
+    programsTitle: "برامج مركز إفادة",
     programsSubtitle: "مناهج وبرامج تخصصية شاملة مصممة لتمكين أبنائنا معرفياً ومهنياً ورياضياً",
     
     progEarlyTitle: "برنامج التدخل المبكر",
@@ -174,7 +177,97 @@ const translations = {
     
     // Footer
     footerCopy: "مركز إفادة للرعاية النهارية. جميع الحقوق محفوظة.",
-    footerLicense: "ترخيص رقم ٢٠٤ - وزارة الموارد البشرية والتنمية الاجتماعية"
+    footerLicense: "ترخيص رقم ٢٠٤ - وزارة الموارد البشرية والتنمية الاجتماعية",
+
+    // About media tags & captions
+    aboutVideo6Tag: "مسيرة التمكين والعطاء في مركز إفادة",
+    aboutVisionPicAlt: "رؤية مركز إفادة لتأهيل وتمكين ذوي متلازمة داون",
+    aboutGoalsPicAlt: "أهداف ورسالة مركز إفادة للرعاية النهارية",
+    aboutVideo7Tag: "كلمة الإدارة التنفيذية لمركز إفادة",
+
+    // Programs media
+    progEarlyVideoTag: "جانب من جلسات وتدريبات برنامج التدخل المبكر",
+    progEarlyPicCaption: "بطاقات التعلم المصورة ووسائل التدخل المبكر لتنمية المهارات الإدراكية",
+    progAcadVideo1Tag: "التطبيق العملي للبرنامج الأكاديمي",
+    progAcadVideo2Tag: "تنمية المهارات الأكاديمية والتعليمية للطلاب",
+
+    // Clinics descriptions & media
+    clinicSpeechDesc: "تنمية مهارات الطلاب اللغوية لتمكينهم من التواصل والتعبير عن احتياجاتهم، والتفاعل مع من حولهم",
+    clinicSpeechVideo1Tag: "جلسات النطق والتخاطب وتطوير مخارج الحروف",
+    clinicSpeechVideo2Tag: "تنمية التواصل اللغوي والتعبيري",
+    clinicBehaviorDesc: "تنمية سلوكيات الطلاب الإيجابية وتدعيم السلوك البديل عبر برامج التعزيز الإيجابي",
+    clinicBehaviorMediaTag: "تطبيقات برامج التعزيز وتعديل السلوك الإيجابي",
+    clinicPTDesc: "يهدف إلى تحسين حركة الطلاب من خلال تدريبهم على مهارات التوازن والقوة وتنمية القدرات البدنية الوظيفية",
+    clinicPTVideoTag: "تدريبات العلاج الطبيعي والتأهيل الحركي الوظيفي",
+    clinicOTDesc: "يهدف إلى تحسين التآزر بين العين واليد ، وتنمية التحكم الحركي الدقيق لتمكين الطلاب من استخدام الأدوات المدرسية وآداء الأنشطة اليومية باستقلال",
+    clinicOTMediaTag: "أنشطة العلاج الوظيفي والتكامل الحسي والمهارات الدقيقة",
+
+    // How We Learn Subsection
+    learnMethodKicker: "طرق التعلم",
+    learnMethodTitle: "هل تساءلتم كيف نتعلم في مركز إفادة ؟",
+    learnMethodSubtitle: "بيئة تعليمية تأهيلية متكاملة تصنع من كل هدف خطوة نحو استقلالية وتميز أبنائنا وبناتنا",
+    learnMethod1Title: "نتعلم بالجلسات الفردية",
+    learnMethod1Desc: "تهدف الجلسات الفردية إلى تدريب كل طالب تدريب مخصص بناء على خطته الفردية التربوية لمراعاة الفروق الفردية",
+    learnMethod1Tag: "جانب من الجلسات التدريبية الفردية",
+    learnMethod2Title: "ونتعلم بالحلقات الجماعية",
+    learnMethod2Desc: "تهدف المجموعات التعليمية إلى دمج الطالب مع أقرانه لتطوير مهاراته الاجتماعية، وتعزيز نمذجة السلوك الإيجابي (التعلم بالتقليد)، ولتعميم المهارات التعليمية عبر مختلف المواقف اليومية",
+    learnMethod2Tag: "أنشطة وتفاعل المجموعات التعليمية الجماعية",
+    learnMethod3Title: "كما نتعلم عن طريق تحليل المهارة",
+    learnMethod3Desc: "تهدف إلى تجزئة الأهداف إلى خطوات تتناسب مع قدرات الطلاب لتمكينه من التعلم والتدريب، ومنح الطالب شعور الإنجاز عند إتقان كل خطوة",
+
+    // Platform app downloads
+    platformIosBtn: "تحميل منصة إفادة التعليمية iOS ↗",
+    platformAndroidBtn: "تحميل منصة إفادة التعليمية Android ↗",
+    platformStoreAppStore: "متوفر على App Store",
+    platformStoreGooglePlay: "متوفر على Google Play",
+
+    // Success Stories
+    storiesKicker: "نماذج ملهمة",
+    storiesTitle: "قصص النجاح",
+    storiesSubtitle: "نحتفي بقصص إصرار ونجاح أبطالنا الملهمة وخطواتهم الواثقة نحو المستقبل",
+    story1Caption: "قصة نجاح البطل عبدالله الرشدان",
+    story2Caption: "قصة نجاح البطل صالح المشعبي",
+
+    // National Pride Section
+    nationalKicker: "فخر وانتماء",
+    nationalTitle: "وطني .. عزّنا وانتماؤنا 🇸🇦",
+    nationalSubtitle: "في وطننا ننتمي، وبقيمه نعتز، وبإنجازاته نفخر، وعلى أرضه نحلم ونتعلم ونبدع",
+    nationalVid1Caption: "المملكة العربية السعودية هي وطن يسكن القلوب، وتاريخ نفخر به، وهوية نعتز بها، ومستقبل نشارك جميعًا في صناعته.",
+    nationalVid2Caption: "في وطننا ننتمي، وبقيمه نعتز، وبإنجازاته نفخر، وعلى أرضه نحلم ونتعلم ونبدع، فاللهم احفظ لنا مملكتنا",
+    nationalPic7Caption: "سنصبح عضو فاعل في مجتمعنا ونقوم بمساعدة من يحتاج إلينا",
+    nationalPic6Caption: "احتفالات وفعاليات اليوم الوطني ويوم التأسيس في مركز إفادة",
+    nationalStageCaption: "لحظات مليئة بالثقة والإبداع ، أثبتوا فيها أن لكل موهبة نوراً يستحق أن يسطع. نجومنا الصغار .. بكم يزهو المسرح وبإبداعكم نفخر",
+
+    // Partnerships & Careers Updates
+    partnershipsHilalCaption: "استضافة نادي الهلال لأبطالنا",
+    partnershipsHilalVidCaption: "توثيق استضافة نادي الهلال لأبطال مركز إفادة",
+    careersTribute: "كادر التربية الخاصة هم الذين يرون الإمكانات حين قد لا يراها الآخرون، ويحتفون بالخطوات الصغيرة وكأنها انتصارات عظيمة، ويمنحون طلابهم من وقتهم وقلوبهم وجهدهم، إيمانًا بأن لكل طالب قدرة، ولكل إنجاز قيمة، ولكل إنسان حقًا في أن يتعلم ويُقدَّر ويُحتفى به.<br><br><strong>فخورون بكم.. يا من جعلتم من مهنتكم رسالة، ومن عطائكم أثرًا، ومن طلابكم حكايات نجاح تستحق أن تُروى</strong>",
+
+    // Annual Closing Ceremony
+    ceremonyKicker: "حصاد الإبداع السنوي",
+    ceremonyTitle: "الحفل الختامي السنوي",
+    ceremonySubtitle: "لحظات مليئة بالثقة والإبداع ، أثبتوا فيها أن لكل موهبة نوراً يستحق أن يسطع. نجومنا الصغار .. بكم يزهو المسرح وبإبداعكم نفخر",
+    ceremonyVid1Tag: "العرض المسرحي واللوحات الإبداعية لنجومنا الصغار",
+    ceremonyVid2Tag: "فقرات التكريم وتتويج إنجازات الطلاب السنوية",
+    ceremonyVid3Tag: "فرحة النجاح والتخرج والاحتفاء مع الأهالي والكوادر",
+
+    // Summer Program
+    summerKicker: "صيف مميز ومثمر",
+    summerTitle: "البرنامج الصيفي لمركز إفادة",
+    summerDesc: "نهاية كل عامٍ دراسي نفتح أبوابنا لاستقبال الطلاب في الإجازة الصيفية وفق برنامج إفادة الصيفي (تعليمي - تدريبي - تأهيلي - ترفيهي) ، ",
+    summerRegisterBtn: "سجل معنا ↗",
+    summerVideoTag: "أنشطة وفعاليات برنامج إفادة الصيفي الترفيهي والتأهيلي",
+
+    // Email Modal Action Sheet
+    emailModalTitle: "اختر طريقة التواصل عبر البريد",
+    emailModalSub: "يمكنك إرسال الرسالة عبر تطبيقك المفضل أو نسخ البريد مباشرة:",
+    emailOptionDefault: "فتح في تطبيق البريد الأساسي",
+    emailOptionGmail: "فتح في متصفح / تطبيق Gmail",
+    emailOptionOutlook: "فتح في متصفح / تطبيق Outlook",
+    emailOptionCopy: "نسخ عنوان البريد الإلكتروني",
+    emailToastCopied: "تم نسخ عنوان البريد الإلكتروني بنجاح!",
+    emailModalClose: "إغلاق"
+
   },
   
   en: {
@@ -202,8 +295,11 @@ const translations = {
     heroHook: "Do you know who I am? Do you know Efada Center?",
     requestConsultation: "Request Comprehensive Evaluation",
     explorePrograms: "Explore Programs & Services",
-    statGoalMastery: "Individualized Goal Mastery",
-    statChildrenSupported: "Children Empowered & Integrated",
+    statGoalMasteryNum: "95%",
+    statGoalMastery: "Individualized Goal Mastery Rate",
+    statChildrenNum: "+1,000",
+    statChildrenSupported: "Children Empowered & Socially Integrated",
+    statSpecialistsNum: "+800",
     statSpecialistsTrained: "Specialists Professionally Trained",
     
     // Hero Showcase Card
@@ -247,7 +343,7 @@ const translations = {
     
     // Core Educational & Developmental Programs Section
     programsKicker: "Center Programs",
-    programsTitle: "Programs Offered at Efada Center",
+    programsTitle: "Efada Center Programs",
     programsSubtitle: "Comprehensive specialized curricula and programs designed to empower our children cognitively, vocationally, and athletically.",
     
     progEarlyTitle: "Early Intervention Program",
@@ -346,7 +442,97 @@ const translations = {
     
     // Footer
     footerCopy: "Efada Day Care Center. All Rights Reserved.",
-    footerLicense: "License No. 204 - Ministry of Human Resources and Social Development"
+    footerLicense: "License No. 204 - Ministry of Human Resources and Social Development",
+
+    // About media tags & captions
+    aboutVideo6Tag: "Journey of Empowerment and Dedication at Efada Center",
+    aboutVisionPicAlt: "Efada Center Vision for Empowering Down Syndrome Champions",
+    aboutGoalsPicAlt: "Goals and Mission of Efada Day Care Center",
+    aboutVideo7Tag: "Executive Leadership Address - Efada Center",
+
+    // Programs media
+    progEarlyVideoTag: "Early Intervention Training & Developmental Sessions",
+    progEarlyPicCaption: "Visual Learning Flashcards & Early Intervention Tools",
+    progAcadVideo1Tag: "Practical Application of Academic Curriculum",
+    progAcadVideo2Tag: "Academic & Cognitive Skills Development",
+
+    // Clinics descriptions & media
+    clinicSpeechDesc: "Developing students' language skills to enable them to communicate, express their needs, and interact with those around them.",
+    clinicSpeechVideo1Tag: "Speech & Language Articulation Sessions",
+    clinicSpeechVideo2Tag: "Expressive & Linguistic Communication Sessions",
+    clinicBehaviorDesc: "Developing students' positive behaviors and reinforcing alternative behaviors through positive reinforcement programs.",
+    clinicBehaviorMediaTag: "Positive Reinforcement & Behavior Modification Applications",
+    clinicPTDesc: "Aims to improve students' movement by training them in balance and strength skills and developing functional physical capabilities.",
+    clinicPTVideoTag: "Physical Therapy & Functional Motor Rehabilitation",
+    clinicOTDesc: "Aims to improve eye-hand coordination and develop fine motor control to enable students to use school tools and perform daily activities independently.",
+    clinicOTMediaTag: "Occupational Therapy, Sensory Integration & Fine Motor Skills",
+
+    // How We Learn Subsection
+    learnMethodKicker: "Learning Methods",
+    learnMethodTitle: "Have You Wondered How We Learn at Efada Center?",
+    learnMethodSubtitle: "An integrated educational framework respecting individual differences and cultivating each student's success.",
+    learnMethod1Title: "We Learn Through Individual Sessions",
+    learnMethod1Desc: "Individual sessions provide tailored training based on each student's individualized educational plan (IEP) to accommodate individual differences.",
+    learnMethod1Tag: "Individual Specialized Training Sessions",
+    learnMethod2Title: "We Learn Through Group Circles",
+    learnMethod2Desc: "Group learning circles foster peer integration, develop social skills, reinforce positive behavioral modeling (learning by imitation), and generalize skills across daily scenarios.",
+    learnMethod2Tag: "Group Educational Activities & Peer Interaction",
+    learnMethod3Title: "We Also Learn Through Task Analysis",
+    learnMethod3Desc: "Breaks down objectives into progressive steps suited to student capabilities, empowering learning and bestowing a sense of accomplishment upon mastering each step.",
+
+    // Platform app downloads
+    platformIosBtn: "Download Efada Platform (iOS) ↗",
+    platformAndroidBtn: "Download Efada Platform (Android) ↗",
+    platformStoreAppStore: "Available on App Store",
+    platformStoreGooglePlay: "Available on Google Play",
+
+    // Success Stories
+    storiesKicker: "Inspiring Journeys",
+    storiesTitle: "Success Stories",
+    storiesSubtitle: "Celebrating our champions' inspiring determination and confident strides toward a brighter future.",
+    story1Caption: "Success Story of Champion Abdullah Al-Rashdan",
+    story2Caption: "Success Story of Champion Saleh Al-Mashabi",
+
+    // National Pride Section
+    nationalKicker: "Pride & Belonging",
+    nationalTitle: "My Homeland .. Our Pride and Belonging 🇸🇦",
+    nationalSubtitle: "In our homeland we belong, in its values we cherish, in its achievements we take pride, and upon its soil we dream, learn, and innovate.",
+    nationalVid1Caption: "The Kingdom of Saudi Arabia is a homeland residing in our hearts, a history we take pride in, an identity we cherish, and a future we all help build.",
+    nationalVid2Caption: "In our homeland we belong, in its values we cherish, in its achievements we take pride, and upon its soil we dream, learn, and innovate. May God protect our Kingdom.",
+    nationalPic7Caption: "We will become active members in our community and help those who need us.",
+    nationalPic6Caption: "National Day & Founding Day Celebrations at Efada Center",
+    nationalStageCaption: "Moments filled with confidence and creativity, proving every talent deserves to shine. Our young stars .. the stage flourishes with you and we are proud of your brilliance.",
+
+    // Partnerships & Careers Updates
+    partnershipsHilalCaption: "Al-Hilal FC Hosting Our Champions",
+    partnershipsHilalVidCaption: "Al-Hilal FC Hosting & Community Partnership with Efada Champions",
+    careersTribute: "Special education staff are those who perceive potential when others might not, celebrating small steps as grand victories, giving their time, hearts, and energy, with firm belief that every student possesses ability, every achievement holds worth, and every person deserves to learn, be valued, and celebrated.<br><br><strong>We are proud of you.. you who turned your profession into a mission, your giving into enduring impact, and your students into success stories worthy of being told.</strong>",
+
+    // Annual Closing Ceremony
+    ceremonyKicker: "Annual Milestone",
+    ceremonyTitle: "Annual Closing Ceremony",
+    ceremonySubtitle: "Moments filled with confidence and creativity, proving every talent has a light deserving to shine. Our young stars .. the stage flourishes with you and we take pride in your creativity.",
+    ceremonyVid1Tag: "Theatrical & Creative Performances by Our Young Stars",
+    ceremonyVid2Tag: "Honoring Student Milestones and Annual Achievements",
+    ceremonyVid3Tag: "Celebration of Graduation and Success with Families",
+
+    // Summer Program
+    summerKicker: "Enriching Summer Experience",
+    summerTitle: "Efada Center Summer Program",
+    summerDesc: "At the end of each academic year, we open our doors to welcome students during the summer break under Efada Summer Program (Educational - Training - Rehabilitation - Recreational), ",
+    summerRegisterBtn: "Register with Us ↗",
+    summerVideoTag: "Efada Summer Program Activities, Training & Fun",
+
+    // Email Modal Action Sheet
+    emailModalTitle: "Choose Email Application",
+    emailModalSub: "Select your preferred email client or copy the address directly:",
+    emailOptionDefault: "Open in Default Mail App",
+    emailOptionGmail: "Open in Gmail (Web / App)",
+    emailOptionOutlook: "Open in Outlook (Web / App)",
+    emailOptionCopy: "Copy Email Address",
+    emailToastCopied: "Email address copied to clipboard!",
+    emailModalClose: "Close"
+
   }
 };
 
@@ -473,6 +659,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 3. Smooth scrolling
   setupSmoothScrolling();
+  setupEmailModalHandler();
 
   // 4. Update footer year
   const yearEl = document.getElementById("year");
@@ -483,3 +670,148 @@ document.addEventListener("DOMContentLoaded", () => {
   // 5. Final enforcement of phone number LTR integrity
   enforcePhoneBidiIntegrity();
 });
+
+
+/**
+ * Cross-Device Email Action Sheet / Modal
+ * Solves iOS unconfigured Mail app issues and gives 1-click webmail / copy options.
+ */
+function setupEmailModalHandler() {
+  if (!document.getElementById("emailActionModal")) {
+    const modalHtml = `
+      <div id="emailActionModal" class="email-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="emailModalTitle">
+        <div class="email-modal-card">
+          <button type="button" class="email-modal-close" id="emailModalCloseBtn" aria-label="Close modal">&times;</button>
+          <div class="email-modal-header">
+            <span class="email-modal-icon">✉️</span>
+            <h3 id="emailModalTitle" data-i18n="emailModalTitle">اختر طريقة التواصل عبر البريد</h3>
+            <p id="emailModalSub" data-i18n="emailModalSub">يمكنك إرسال الرسالة عبر تطبيقك المفضل أو نسخ البريد مباشرة:</p>
+            <div class="email-target-chip" id="emailModalTargetEmail" dir="ltr">email@example.com</div>
+          </div>
+          <div class="email-modal-options">
+            <button type="button" class="email-option-btn default-mail-btn" id="emailOptDefault">
+              <span class="opt-icon">📱</span>
+              <span class="opt-label" data-i18n="emailOptionDefault">فتح تطبيق البريد الأساسي</span>
+            </button>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="email-option-btn gmail-btn" id="emailOptGmail">
+              <span class="opt-icon">🔴</span>
+              <span class="opt-label" data-i18n="emailOptionGmail">فتح في متصفح / تطبيق Gmail</span>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="email-option-btn outlook-btn" id="emailOptOutlook">
+              <span class="opt-icon">🔵</span>
+              <span class="opt-label" data-i18n="emailOptionOutlook">فتح في متصفح / تطبيق Outlook</span>
+            </a>
+            <button type="button" class="email-option-btn copy-btn" id="emailOptCopy">
+              <span class="opt-icon">📋</span>
+              <span class="opt-label" data-i18n="emailOptionCopy">نسخ عنوان البريد الإلكتروني</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="emailToast" class="email-toast" role="status" aria-live="polite">
+        <span class="toast-icon">✓</span>
+        <span id="emailToastText" data-i18n="emailToastCopied">تم نسخ عنوان البريد الإلكتروني بنجاح!</span>
+      </div>
+    `;
+    document.body.insertAdjacentHTML("beforeend", modalHtml);
+  }
+
+  const modal = document.getElementById("emailActionModal");
+  const targetEmailEl = document.getElementById("emailModalTargetEmail");
+  const optDefault = document.getElementById("emailOptDefault");
+  const optGmail = document.getElementById("emailOptGmail");
+  const optOutlook = document.getElementById("emailOptOutlook");
+  const optCopy = document.getElementById("emailOptCopy");
+  const closeBtn = document.getElementById("emailModalCloseBtn");
+  const toast = document.getElementById("emailToast");
+
+  let currentEmail = "";
+
+  function openEmailModal(email) {
+    currentEmail = email;
+    targetEmailEl.textContent = email;
+    optGmail.href = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(email);
+    optOutlook.href = "https://outlook.live.com/mail/0/deeplink/compose?to=" + encodeURIComponent(email);
+    modal.classList.add("is-visible");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeEmailModal() {
+    modal.classList.remove("is-visible");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  function showToast(msg) {
+    if (msg) {
+      document.getElementById("emailToastText").textContent = msg;
+    }
+    toast.classList.add("is-visible");
+    setTimeout(() => {
+      toast.classList.remove("is-visible");
+    }, 2800);
+  }
+
+  optDefault.addEventListener("click", () => {
+    window.location.href = "mailto:" + currentEmail;
+    closeEmailModal();
+  });
+
+  optGmail.addEventListener("click", () => {
+    closeEmailModal();
+  });
+
+  optOutlook.addEventListener("click", () => {
+    closeEmailModal();
+  });
+
+  optCopy.addEventListener("click", async () => {
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(currentEmail);
+      } else {
+        const ta = document.createElement("textarea");
+        ta.value = currentEmail;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+      }
+      closeEmailModal();
+      const currentLang = document.documentElement.lang === "en" ? "en" : "ar";
+      const msg = translations[currentLang]?.emailToastCopied || "تم نسخ عنوان البريد الإلكتروني بنجاح!";
+      showToast(msg);
+    } catch (err) {
+      console.warn("Clipboard copy failed:", err);
+      window.location.href = "mailto:" + currentEmail;
+      closeEmailModal();
+    }
+  });
+
+  closeBtn.addEventListener("click", closeEmailModal);
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeEmailModal();
+    }
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.classList.contains("is-visible")) {
+      closeEmailModal();
+    }
+  });
+
+  // Attach listener to all mailto links
+  document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const href = link.getAttribute("href") || "";
+      const email = href.replace(/^mailto:/i, "").split("?")[0].trim();
+      if (email) {
+        openEmailModal(email);
+      }
+    });
+  });
+}
