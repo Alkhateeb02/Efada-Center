@@ -547,19 +547,25 @@ a[href^="tel:"] strong {
 .metric-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .metric-num {
   font-size: 1.75rem;
   font-weight: 800;
   line-height: 1.1;
+  text-align: center;
+  display: block;
 }
 
 .metric-sub {
   font-size: 0.8125rem;
   color: var(--text-muted);
   font-weight: 600;
-  margin-top: 2px;
+  margin-top: 4px;
+  text-align: center;
+  display: block;
 }
 
 .metric-separator {
@@ -2577,9 +2583,21 @@ a[href^="tel:"] strong {
   }
 
   .hero-metrics-strip {
-    flex-wrap: wrap;
-    gap: 16px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+  }
+
+  .metric-separator {
+    display: none;
+  }
+
+  .metric-box {
+    align-items: center;
+    text-align: center;
+    width: 100%;
   }
 
   .hero-video-card {
@@ -2724,9 +2742,9 @@ a[href^="tel:"] strong {
 }
 
 .program-videos-duo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .media-subtag {

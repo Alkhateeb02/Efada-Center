@@ -759,8 +759,33 @@ function setupEmailModalHandler() {
     closeEmailModal();
   });
 
-  optGmail.addEventListener("click", () => {
+  optGmail.addEventListener("click", (e) => {
+    e.preventDefault();
     closeEmailModal();
+
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    const isAndroid = /Android/i.test(navigator.userAgent);
+    const encoded = encodeURIComponent(currentEmail);
+    const webGmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encoded;
+
+    if (isAndroid) {
+      // Launch official Gmail app on Android via Intent with web fallback
+      const intentUrl = "intent:" + encoded + "#Intent;action=android.intent.action.SENDTO;scheme=mailto;package=com.google.android.gm;S.browser_fallback_url=" + encodeURIComponent(webGmailUrl) + ";end";
+      window.location.href = intentUrl;
+    } else if (isIOS) {
+      // Launch official Gmail app on iOS (iPhone / iPad) with fallback to webmail
+      const iosGmailUrl = "googlegmail:///co?to=" + encoded;
+      const start = Date.now();
+      window.location.href = iosGmailUrl;
+      setTimeout(() => {
+        if (Date.now() - start < 1500) {
+          window.open(webGmailUrl, "_blank");
+        }
+      }, 600);
+    } else {
+      // Desktop / Other: open web Gmail in new tab
+      window.open(webGmailUrl, "_blank");
+    }
   });
 
   optOutlook.addEventListener("click", () => {
