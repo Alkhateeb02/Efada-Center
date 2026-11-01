@@ -2951,9 +2951,9 @@ a[href^="tel:"] strong {
 }
 
 .platform-app-store-tag.tag-play {
-  background: rgba(15, 157, 88, 0.12);
-  color: #0f9d58;
-  border: 1px solid rgba(15, 157, 88, 0.3);
+  background: transparent;
+  color: var(--brand-green);
+  border: none;
 }
 
 /* 6. Success Stories Section */
